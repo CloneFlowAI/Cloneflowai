@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /emails/
+
+Sitemap: https://cloneflowai.online/sitemap.xml
