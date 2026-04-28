@@ -1,0 +1,1577 @@
+<!DOCTYPE html>
+<html lang="es" id="htmlRoot">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CloneFlow — Genera y Clona Voces con IA · Pago Único de por Vida</title>
+  <meta name="description" content="Genera narración profesional con 50 voces en 20 idiomas y clona cualquier voz con IA. 100% local. Pago único, sin suscripciones. El arma secreta de los canales faceless de YouTube."/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://cloneflowai.online/"/>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237c3aed'/%3E%3Cpath d='M16 32l6-12 6 24 6-18 6 14 6-8' stroke='white' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E"/>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://cloneflowai.online/"/>
+  <meta property="og:title" content="CloneFlow — Voz IA y Clonador de Voz · Pago único"/>
+  <meta property="og:description" content="50 voces en 20 idiomas + clonador de voz IA. 100% local, sin suscripciones. Acceso vitalicio desde 297€."/>
+  <meta property="og:image" content="https://cloneflowai.online/og-image.png"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta property="og:locale" content="es_ES"/>
+  <meta property="og:locale:alternate" content="en_US"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="CloneFlow — Voz IA y Clonador de Voz"/>
+  <meta name="twitter:description" content="50 voces en 20 idiomas + clonador IA. 100% local, sin suscripciones. Acceso vitalicio."/>
+  <meta name="twitter:image" content="https://cloneflowai.online/og-image.png"/>
+  <meta name="theme-color" content="#7c3aed"/>
+  <meta name="author" content="CloneFlow AI"/>
+  <meta name="keywords" content="clonador de voz, voz IA, generador de voz, faceless youtube, narración IA, ElevenLabs alternativa, voice cloning, AI voiceover"/>
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "CloneFlow",
+        "operatingSystem": "Windows 10, Windows 11",
+        "applicationCategory": "MultimediaApplication",
+        "description": "Software profesional de generación y clonación de voz con IA. 100% local, pago único de por vida.",
+        "url": "https://cloneflowai.online/",
+        "image": "https://cloneflowai.online/og-image.png",
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "CloneFlow Starter",
+            "price": "297",
+            "priceCurrency": "EUR",
+            "availability": "https://schema.org/InStock",
+            "url": "https://pay.hotmart.com/K105578551U?off=starter"
+          },
+          {
+            "@type": "Offer",
+            "name": "CloneFlow Pro",
+            "price": "497",
+            "priceCurrency": "EUR",
+            "availability": "https://schema.org/InStock",
+            "url": "https://pay.hotmart.com/K105578551U"
+          }
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "1500",
+          "bestRating": "5"
+        }
+      },
+      {
+        "@type": "Organization",
+        "name": "CloneFlow AI",
+        "url": "https://cloneflowai.online",
+        "email": "info@cloneflowai.online",
+        "logo": "https://cloneflowai.online/og-image.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "info@cloneflowai.online",
+          "contactType": "customer support",
+          "availableLanguage": ["Spanish", "English"]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type":"Question","name":"¿La licencia es de por vida?","acceptedAnswer":{"@type":"Answer","text":"Sí. Un solo pago y usas el software para siempre, incluyendo todas las actualizaciones futuras."}},
+          {"@type":"Question","name":"¿Hay garantía de devolución?","acceptedAnswer":{"@type":"Answer","text":"7 días sin preguntas. Escribe a info@cloneflowai.online y te devolvemos el 100% del importe."}},
+          {"@type":"Question","name":"¿Cómo recibo mi clave de activación?","acceptedAnswer":{"@type":"Answer","text":"Tras el pago en Hotmart recibes un email automático desde info@cloneflowai.online con instrucciones. Envías tu HWID y recibes la clave en menos de 24h."}},
+          {"@type":"Question","name":"¿Funciona en Mac?","acceptedAnswer":{"@type":"Answer","text":"Actualmente solo Windows 10/11. Los usuarios de Mac usan VMs (Parallels, VMware) con Windows."}}
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Preconnects -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>emailjs.init('PvZIFLPptwRh0F5q0');</script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{
+      --bg:#070709;
+      --bg-2:#0c0c11;
+      --bg-3:#11111a;
+      --line:#1f1f2b;
+      --line-2:#262634;
+      --text:#f5f5f7;        /* primario  */
+      --text-2:#cfcfd6;      /* secundario alto contraste */
+      --text-3:#9b9bab;      /* terciario aún legible */
+      --muted:#6f6f80;
+      --accent:#8b5cf6;       /* violeta principal */
+      --accent-2:#a78bfa;     /* violeta claro */
+      --accent-deep:#6d28d9;
+      --green:#22c55e;
+      --green-2:#4ade80;
+      --amber:#f59e0b;
+      --red:#ef4444;
+      scroll-behavior:smooth;
+    }
+    *{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+    html,body{background:var(--bg);color:var(--text);font-family:'Inter',system-ui,-apple-system,sans-serif}
+    body{overflow-x:hidden}
+
+    /* ───── PALETA SEMÁNTICA ───── */
+    .text-2{color:var(--text-2)}
+    .text-3{color:var(--text-3)}
+    .text-muted{color:var(--muted)}
+    .accent{color:var(--accent-2)}
+    .accent-bg{background:var(--accent)}
+    .neon-green{color:#4ade80}
+    .neon-red{color:#fb7185}
+
+    /* ───── SUPERFICIES ───── */
+    .surface-a{background:#0a0a0e}
+    .surface-b{background:#080810}
+    .card{
+      background:linear-gradient(180deg, #11111a 0%, #0c0c14 100%);
+      border:1px solid var(--line);
+      border-radius:18px;
+      transition:border-color .25s, transform .25s;
+    }
+    .card:hover{border-color:var(--line-2)}
+    .card-glow{
+      background:linear-gradient(180deg, #161028 0%, #0e0c1c 100%);
+      border:1px solid #5b21b677;
+      border-radius:18px;
+      box-shadow:0 0 60px rgba(139,92,246,.12), inset 0 1px 0 rgba(255,255,255,.04);
+    }
+    .card-green{
+      background:linear-gradient(180deg, #0d1f15 0%, #0a1410 100%);
+      border:1px solid #16a34a55;
+      border-radius:18px;
+    }
+
+    /* ───── BOTONES ───── */
+    .btn-primary{
+      background:linear-gradient(180deg, #9b6cf3 0%, #7c3aed 100%);
+      color:#fff;
+      border:1px solid #a78bfa55;
+      box-shadow:0 8px 30px rgba(124,58,237,.45), inset 0 1px 0 rgba(255,255,255,.18);
+      transition:transform .15s, box-shadow .2s, filter .2s;
+    }
+    .btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 40px rgba(124,58,237,.6), inset 0 1px 0 rgba(255,255,255,.22);filter:brightness(1.08)}
+    .btn-secondary{
+      background:#11111a;
+      color:#f5f5f7;
+      border:1px solid var(--line-2);
+      transition:border-color .2s, transform .15s;
+    }
+    .btn-secondary:hover{border-color:#52525b;transform:translateY(-1px)}
+    .btn-amber{background:linear-gradient(180deg,#fbbf24,#f59e0b);color:#1a0e00;border:1px solid #fde68a44;box-shadow:0 6px 24px rgba(245,158,11,.35)}
+    .btn-amber:hover{filter:brightness(1.08);transform:translateY(-1px)}
+
+    /* ───── BADGES ───── */
+    .badge{display:inline-flex;align-items:center;gap:.45rem;font-size:.7rem;font-weight:700;letter-spacing:.06em;border-radius:999px;padding:.35rem .9rem;border:1px solid;text-transform:uppercase}
+    .badge-violet{border-color:#a78bfa55;color:#c4b5fd;background:#7c3aed11}
+    .badge-green{border-color:#22c55e55;color:#86efac;background:#22c55e11}
+    .badge-amber{border-color:#f59e0b55;color:#fcd34d;background:#f59e0b11}
+    .badge-red{border-color:#ef444455;color:#fca5a5;background:#ef444411}
+
+    /* ───── HERO BG ───── */
+    .hero-grid{
+      background-image:
+        radial-gradient(circle at 50% 0%, rgba(139,92,246,.18) 0%, transparent 55%),
+        radial-gradient(circle at 80% 30%, rgba(34,197,94,.07) 0%, transparent 50%),
+        linear-gradient(rgba(139,92,246,.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(139,92,246,.06) 1px, transparent 1px);
+      background-size:auto, auto, 64px 64px, 64px 64px;
+      mask-image:radial-gradient(ellipse at 50% 30%, black 35%, transparent 75%);
+    }
+
+    /* ───── WAVEFORM ───── */
+    .wave-bar{
+      width:4px;
+      border-radius:2px;
+      background:linear-gradient(180deg,#a78bfa,#7c3aed);
+      animation:wave 1.4s ease-in-out infinite;
+      transform-origin:center;
+    }
+    @keyframes wave{0%,100%{transform:scaleY(.25)}50%{transform:scaleY(1)}}
+
+    /* ───── TICKER ───── */
+    @keyframes ticker-fade{
+      0%{opacity:0;transform:translateY(8px)}
+      8%{opacity:1;transform:translateY(0)}
+      88%{opacity:1;transform:translateY(0)}
+      100%{opacity:0;transform:translateY(-8px)}
+    }
+    .ticker-item{animation:ticker-fade 4s ease-in-out infinite}
+
+    /* ───── FAQ ───── */
+    .faq-body{max-height:0;overflow:hidden;transition:max-height .4s ease}
+    .faq-body.open{max-height:500px}
+
+    /* ───── COUNTDOWN ───── */
+    .cdigit{
+      background:linear-gradient(180deg,#1a1428,#0e0a1a);
+      border:1px solid #4c1d9555;
+      border-radius:.7rem;
+      padding:.55rem 1.1rem;
+      min-width:64px;
+      text-align:center;
+      box-shadow:inset 0 1px 0 rgba(255,255,255,.05);
+    }
+    .ulabel{font-size:.65rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin-top:.4rem;font-weight:600}
+
+    /* ───── FLASH BANNER ───── */
+    #flashBanner{
+      background:
+        linear-gradient(90deg,#7c2d12 0%, #b45309 25%, #f59e0b 50%, #b45309 75%, #7c2d12 100%);
+      color:#fff8e1;
+    }
+
+    /* ───── CHAT ───── */
+    #chatPanel{display:none}
+    #chatPanel.open{display:flex}
+    .chat-bot{background:#171728;border:1px solid #4c1d9555;border-radius:14px 14px 14px 4px;color:#e5e7eb}
+    .chat-user{background:linear-gradient(180deg,#9b6cf3,#7c3aed);border-radius:14px 14px 4px 14px;color:#fff}
+    @keyframes pulse-dot{0%,100%{opacity:1}50%{opacity:.35}}
+    .pulse{animation:pulse-dot 2s infinite}
+
+    /* ───── EXIT POPUP ───── */
+    #exitPopup{display:none}
+    #exitPopup.show{display:flex}
+
+    /* ───── LANG TOGGLE ───── */
+    .lang-toggle{display:flex;align-items:center;gap:2px;background:#0d0d14;border:1px solid var(--line);border-radius:.5rem;padding:2px}
+    .lang-toggle button{font-size:.72rem;font-weight:700;padding:.3rem .55rem;border-radius:.35rem;border:none;cursor:pointer;transition:all .15s;background:transparent;color:#9b9bab;letter-spacing:.04em}
+    .lang-toggle button.active{background:var(--accent);color:#fff}
+    .lang-toggle button:hover:not(.active){color:#fff}
+
+    /* ───── STICKY MOBILE CTA ───── */
+    #stickyMobile{
+      display:none;
+      position:fixed;
+      bottom:0;left:0;right:0;
+      z-index:55;
+      padding:.7rem;
+      background:linear-gradient(180deg, rgba(7,7,9,.85), rgba(7,7,9,.98));
+      backdrop-filter:blur(12px);
+      border-top:1px solid var(--line);
+    }
+    @media (max-width:768px){
+      #stickyMobile{display:flex}
+      #chatBtn{bottom:84px!important}
+    }
+
+    /* ───── INPUTS ───── */
+    .input-base{
+      background:#0d0d14;
+      border:1px solid var(--line-2);
+      color:#fff;
+      border-radius:.85rem;
+      padding:.85rem 1rem;
+      font-size:.95rem;
+      outline:none;
+      transition:border-color .2s, box-shadow .2s;
+    }
+    .input-base::placeholder{color:#5d5d6e}
+    .input-base:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(139,92,246,.18)}
+
+    /* ───── DIVIDERS ───── */
+    .divider-grad{
+      height:1px;
+      background:linear-gradient(90deg, transparent, #2a2a3a, transparent);
+    }
+
+    /* ───── SCROLL BEHAVIOR ───── */
+    section{scroll-margin-top:96px}
+
+    /* ───── UTILITIES ───── */
+    .clamp-text{text-wrap:pretty}
+    .glow-violet{box-shadow:0 0 80px rgba(139,92,246,.18)}
+    @keyframes shimmer{0%{background-position:-200% 0}100%{background-position:200% 0}}
+    .shimmer{
+      background:linear-gradient(90deg,transparent,rgba(255,255,255,.08),transparent);
+      background-size:200% 100%;
+      animation:shimmer 3s linear infinite;
+    }
+  </style>
+</head>
+<body class="antialiased clamp-text">
+
+<!-- ════════════════════════════════════════════════════ -->
+<!-- FLASH BANNER -->
+<!-- ════════════════════════════════════════════════════ -->
+<div id="flashBanner" class="fixed top-0 inset-x-0 z-[60] px-4 py-2.5 flex items-center justify-between gap-3 flex-wrap text-sm">
+  <div class="flex items-center gap-2 flex-wrap font-bold">
+    <span data-i18n="flash_text">⚡ OFERTA FLASH — 40% DESCUENTO · La oferta termina en</span>
+    <span id="flashCountdown" class="font-black bg-black/30 px-2.5 py-0.5 rounded text-white tabular-nums">--:--:--</span>
+  </div>
+  <div class="flex items-center gap-3">
+    <a href="#precio" class="bg-black/80 text-amber-300 text-xs font-black px-4 py-1.5 rounded-lg hover:bg-black transition" data-i18n="flash_cta">RESERVAR PRECIO</a>
+    <button onclick="dismissBanner()" aria-label="Cerrar" class="text-white/70 hover:text-white text-lg font-bold leading-none">✕</button>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════════ -->
+<!-- NAV -->
+<!-- ════════════════════════════════════════════════════ -->
+<nav id="mainNav" class="fixed inset-x-0 z-50 flex items-center justify-between px-5 md:px-10 py-3.5 bg-[#070709]/85 backdrop-blur-xl border-b border-[#1f1f2b]" style="top:44px">
+  <a href="#" class="flex items-center gap-2.5 group">
+    <span class="w-8 h-8 rounded-lg flex items-center justify-center" style="background:linear-gradient(135deg,#a78bfa,#7c3aed);box-shadow:0 4px 16px rgba(124,58,237,.4)">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l3-7 3 14 3-10 3 7 2-4"/></svg>
+    </span>
+    <span class="text-lg md:text-xl font-black tracking-tight">Clone<span class="accent">Flow</span><span class="badge badge-violet ml-2 hidden sm:inline-flex" style="font-size:.55rem;padding:.2rem .55rem">AI · STUDIO</span></span>
+  </a>
+  <div class="flex items-center gap-3 md:gap-5">
+    <a href="#funciones" class="hidden md:block text-sm text-3 hover:text-white transition" data-i18n="nav_features">Funciones</a>
+    <a href="#voces" class="hidden md:block text-sm text-3 hover:text-white transition" data-i18n="nav_voices">Voces</a>
+    <a href="#comparativa" class="hidden md:block text-sm text-3 hover:text-white transition" data-i18n="nav_why">Calculadora</a>
+    <a href="#precio" class="hidden md:block text-sm text-3 hover:text-white transition" data-i18n="nav_price">Precios</a>
+    <a href="#faqList" class="hidden lg:block text-sm text-3 hover:text-white transition">FAQ</a>
+    <div class="lang-toggle">
+      <button id="btnES" class="active" onclick="switchLang('es')" aria-label="Español">🇪🇸 ES</button>
+      <button id="btnEN" onclick="switchLang('en')" aria-label="English">🇺🇸 EN</button>
+    </div>
+    <a href="#precio" class="btn-primary text-sm font-bold px-4 md:px-5 py-2 rounded-lg" data-i18n="nav_buy">Comprar</a>
+  </div>
+</nav>
+
+<!-- ════════════════════════════════════════════════════ -->
+<!-- HERO -->
+<!-- ════════════════════════════════════════════════════ -->
+<section class="relative pt-[200px] pb-20 px-5 overflow-hidden">
+  <div class="absolute inset-0 hero-grid pointer-events-none"></div>
+  <div class="relative max-w-6xl mx-auto text-center">
+
+    <!-- Top trust line -->
+    <div class="flex flex-wrap items-center justify-center gap-2 mb-6">
+      <span class="badge badge-violet" data-i18n="hero_badge">⚡ El arma secreta de los canales Faceless</span>
+      <span class="badge badge-green hidden sm:inline-flex" data-i18n="hero_badge2">🔒 100% Local · Sin Nube</span>
+    </div>
+
+    <h1 class="text-[2.5rem] sm:text-5xl md:text-7xl font-black leading-[1.04] max-w-5xl mx-auto mb-6 tracking-tight">
+      <span data-i18n-html="hero_h1_pre">Genera y clona voces con IA.</span><br/>
+      <span class="bg-clip-text text-transparent" style="background-image:linear-gradient(135deg,#a78bfa 0%,#7c3aed 60%,#22c55e 100%)" data-i18n="hero_h1_post">Sin pagar cada mes. Para siempre.</span>
+    </h1>
+
+    <p class="text-lg md:text-xl text-2 max-w-2xl mx-auto mb-10 leading-relaxed" data-i18n-html="hero_sub">
+      Pega tu guión de <strong class="text-white">hasta 50.000 caracteres</strong> (~1 hora de audio), elige entre 50 voces en 20+ idiomas o <strong class="text-white">clona cualquier voz</strong> — todo local, sin servidores externos, sin suscripciones.
+    </p>
+
+    <!-- WAVEFORM PREVIEW -->
+    <div class="mx-auto mb-10 max-w-md card p-4 flex items-center gap-3" style="border-color:#4c1d9555">
+      <button class="w-11 h-11 rounded-full btn-primary flex items-center justify-center flex-shrink-0" aria-label="Play preview" onclick="this.classList.toggle('playing')">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="white"><path d="M8 5v14l11-7z"/></svg>
+      </button>
+      <div class="flex items-center gap-[3px] h-9 flex-1 justify-center" id="waveform"></div>
+      <span class="text-xs text-3 font-mono tabular-nums">0:42</span>
+    </div>
+
+    <!-- STEPS -->
+    <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-2 mb-10 text-sm">
+      <div class="card px-4 py-2.5 font-semibold flex items-center gap-2 justify-center" data-i18n="step1">📝 Pega tu guión (50K)</div>
+      <span class="text-muted font-bold text-lg hidden sm:block">→</span>
+      <div class="card px-4 py-2.5 font-semibold flex items-center gap-2 justify-center" data-i18n="step2">🎙️ Elige o clona voz</div>
+      <span class="text-muted font-bold text-lg hidden sm:block">→</span>
+      <div class="card-glow px-4 py-2.5 font-semibold flex items-center gap-2 justify-center text-white" data-i18n="step3">🚀 Exporta WAV · Sube</div>
+    </div>
+
+    <!-- CTAs -->
+    <div class="flex flex-col sm:flex-row gap-3 mb-5 justify-center">
+      <a href="#precio" class="btn-primary text-base md:text-lg font-black px-8 md:px-10 py-4 rounded-xl inline-flex items-center justify-center gap-2" data-i18n="hero_cta">
+        ACCESO VITALICIO PRO — 497€
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#precio" class="btn-secondary text-base md:text-lg font-bold px-8 md:px-10 py-4 rounded-xl" data-i18n="hero_plans">Ver Planes</a>
+    </div>
+
+    <!-- Trust line -->
+    <div class="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-xs text-3 mb-8">
+      <span class="flex items-center gap-1.5"><svg viewBox="0 0 24 24" width="14" height="14" fill="#22c55e"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg> <span data-i18n="hero_t1">Pago único</span></span>
+      <span class="flex items-center gap-1.5"><svg viewBox="0 0 24 24" width="14" height="14" fill="#22c55e"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg> <span data-i18n="hero_t2">Garantía 7 días</span></span>
+      <span class="flex items-center gap-1.5"><svg viewBox="0 0 24 24" width="14" height="14" fill="#22c55e"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg> <span data-i18n="hero_t3">Activación &lt;24h</span></span>
+      <span class="flex items-center gap-1.5"><svg viewBox="0 0 24 24" width="14" height="14" fill="#22c55e"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg> <span data-i18n="hero_t4">Windows 10/11</span></span>
+    </div>
+
+    <!-- LIVE PROOF -->
+    <div class="flex flex-col items-center gap-3">
+      <p class="text-sm text-3 flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-[#22c55e] pulse"></span>
+        <span id="viewerCount" class="text-white font-bold">63</span>
+        <span data-i18n="hero_viewers">personas viendo ahora</span>
+      </p>
+      <div class="card px-5 py-2.5 text-xs text-2 min-w-[320px] max-w-md text-center overflow-hidden h-9 flex items-center justify-center">
+        <span id="purchaseTicker" class="ticker-item"></span>
+      </div>
+    </div>
+
+    <!-- REPLACES -->
+    <div class="mt-14 flex flex-col items-center gap-4">
+      <p class="text-xs text-muted tracking-[0.2em] uppercase font-semibold" data-i18n="replaces">Reemplaza herramientas por valor de</p>
+      <p class="text-2xl md:text-3xl font-black"><span class="neon-red">238€/mes</span> <span class="text-3 font-medium text-base">·</span> <span class="text-3 text-base">2.856€/año</span></p>
+      <div class="flex flex-wrap justify-center gap-2 text-sm">
+        <span class="card px-4 py-2 text-3 text-xs">ElevenLabs <span class="text-muted">$99/mes</span></span>
+        <span class="card px-4 py-2 text-3 text-xs">Murf.ai <span class="text-muted">$66/mes</span></span>
+        <span class="card px-4 py-2 text-3 text-xs">Resemble AI <span class="text-muted">$49/mes</span></span>
+        <span class="card px-4 py-2 text-3 text-xs">Descript <span class="text-muted">$24/mes</span></span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════ -->
+<!-- LOGOS / SOCIAL PROOF (placeholder) -->
+<!-- ════════════════════════════════════════════════════ -->
+<section class="py-12 px-5 surface-a border-y border-[#15151f]">
+  <div class="max-w-5xl mx-auto text-center">
+    <p class="text-xs text-muted tracking-[0.2em] uppercase font-semibold mb-6" data-i18n="trusted_by">Más de 1.500 creadores ya producen con CloneFlow</p>
+    <div class="grid grid-cols-3 md:grid-cols-6 gap-4 items-center justify-items-center">
+      <div class="text-3 font-black text-sm md:text-base opacity-60 hover:opacity-100 transition">📺 Faceless YT</div>
+      <div class="text-3 font-black text-sm md:text-base opacity-60 hover:opacity-100 transition">🎙️ Podcasts</div>
+      <div class="text-3 font-black text-sm md:text-base opacity-60 hover:opacity-100 transition">📚 e-Learning</div>
+      <div class="text-3 font-black text-sm md:text-base opacity-60 hover:opacity-100 transition">🏢 Agencias</div>
+      <div class="text-3 font-black text-sm md:text-base opacity-60 hover:opacity-100 transition">🤖 AI Studios</div>
+      <div class="text-3 font-black text-sm md:text-base opacity-60 hover:opacity-100 transition">📚 Audiolibros</div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════ -->
+<!-- DOS HERRAMIENTAS -->
+<!-- ════════════════════════════════════════════════════ -->
+<section class="py-24 px-5 surface-b" id="funciones">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-14">
+      <span class="badge badge-violet mb-4" data-i18n="feat_kicker">2 productos · 1 pago</span>
+      <h2 class="text-3xl md:text-5xl font-black mb-3" data-i18n-html="feat_h2">Dos herramientas. Un pago. <span class="accent">Producción ilimitada.</span></h2>
+      <p class="text-2 max-w-2xl mx-auto" data-i18n="feat_sub">Lo que otros cobran por separado y cada mes, aquí viene incluido de por vida.</p>
+    </div>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="card p-8 flex flex-col gap-5">
+        <div class="flex items-center justify-between">
+          <div class="w-14 h-14 rounded-xl flex items-center justify-center text-3xl" style="background:linear-gradient(135deg,#3b82f6,#1d4ed8)">🎙️</div>
+          <span class="badge badge-violet" data-i18n="feat1_badge">Motor de Voz IA</span>
+        </div>
+        <div>
+          <h3 class="text-2xl md:text-3xl font-black mb-2" data-i18n="feat1_h3">Generador de Voz Profesional</h3>
+          <p class="text-2 leading-relaxed" data-i18n="feat1_desc">Pega hasta 50.000 caracteres y genera narración de calidad estudio con 50 voces en 20+ idiomas. Sin límite de exportaciones. Sin marca de agua.</p>
+        </div>
+        <ul class="space-y-2.5 text-sm text-2" id="feat1_list"></ul>
+        <div class="mt-auto pt-4 border-t border-[#1f1f2b]">
+          <p class="text-xs text-muted">Equivalente: <span class="neon-red font-bold">ElevenLabs $99/mes = 1.188€/año</span></p>
+        </div>
+      </div>
+
+      <div class="card-glow p-8 flex flex-col gap-5 relative overflow-hidden">
+        <div class="absolute top-4 right-4">
+          <span class="badge badge-green" data-i18n="feat2_excl">⚡ Exclusivo Pro</span>
+        </div>
+        <div class="flex items-center justify-between">
+          <div class="w-14 h-14 rounded-xl flex items-center justify-center text-3xl" style="background:linear-gradient(135deg,#22c55e,#15803d)">🧬</div>
+          <span class="badge badge-green" data-i18n="feat2_badge">Clonador IA</span>
+        </div>
+        <div>
+          <h3 class="text-2xl md:text-3xl font-black mb-2" data-i18n="feat2_h3">Clona Cualquier Voz en Segundos</h3>
+          <p class="text-2 leading-relaxed" data-i18n="feat2_desc">Sube una muestra de 30 segundos y genera audio ilimitado con esa voz en cualquier idioma. Clona tu voz o la de cualquier presentador.</p>
+        </div>
+        <ul class="space-y-2.5 text-sm text-2" id="feat2_list"></ul>
+        <div class="mt-auto pt-4 border-t border-[#1f1f2b]">
+          <p class="text-xs text-muted">Equivalente: <span class="neon-red font-bold">Resemble AI $49/mes = 588€/año</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════ -->
+<!-- VOCES -->
+<!-- ════════════════════════════════════════════════════ -->
+<section class="py-24 px-5 surface-a" id="voces">
+  <div class="max-w-5xl mx-auto text-center">
+    <span class="badge badge-violet mb-4" data-i18n="voices_kicker">Biblioteca de voces</span>
+    <h2 class="text-3xl md:text-5xl font-black mb-3" data-i18n-html="voices_h2"><span class="accent">50 voces.</span> 20+ idiomas. Un solo software.</h2>
+    <p class="text-2 mb-12 max-w-xl mx-auto" data-i18n="voices_sub">Selecciona la voz desde el menú antes de generar. Hombre, mujer, acento neutro o regional.</p>
+
+    <div class="flex flex-wrap justify-center gap-2 mb-12">
+      <span class="card px-4 py-2 text-sm text-2">🇪🇸 Español × 7 acentos</span>
+      <span class="card px-4 py-2 text-sm text-2">🇺🇸 English × 6 voces</span>
+      <span class="card px-4 py-2 text-sm text-2">🇧🇷 Português × 4</span>
+      <span class="card px-4 py-2 text-sm text-2">🇫🇷 Français × 3</span>
+      <span class="card px-4 py-2 text-sm text-2">🇩🇪 Deutsch × 2</span>
+      <span class="card px-4 py-2 text-sm text-2">🇮🇹 Italiano × 2</span>
+      <span class="card px-4 py-2 text-sm text-2">🇷🇺 Русский</span>
+      <span class="card px-4 py-2 text-sm text-2">🇵🇱 Polski</span>
+      <span class="card px-4 py-2 text-sm text-2">🇹🇷 Türkçe</span>
+      <span class="card px-4 py-2 text-sm text-2">🇸🇦 العربية</span>
+      <span class="card px-4 py-2 text-sm text-2">🇨🇳 中文</span>
+      <span class="card px-4 py-2 text-sm text-2">🇯🇵 日本語</span>
+      <span class="card px-4 py-2 text-sm text-2">🇰🇷 한국어</span>
+      <span class="card px-4 py-2 text-sm text-2">🇮🇳 हिन्दी</span>
+      <span class="card px-4 py-2 text-sm text-2">Català · Galego</span>
+    </div>
+
+    <div class="card p-6 text-left max-w-xl mx-auto">
+      <div class="flex items-center justify-between mb-4">
+        <p class="text-xs text-muted font-semibold uppercase tracking-wider" data-i18n="voices_preview">Vista previa en la app</p>
+        <span class="text-xs text-3">CloneFlow.exe</span>
+      </div>
+      <div class="space-y-2">
+        <div class="flex items-center gap-3 rounded-lg px-4 py-3 border" style="background:#1a1228;border-color:#5b21b677">
+          <span class="text-lg">🇪🇸</span>
+          <div class="flex-1">
+            <p class="text-sm font-semibold text-white">Español España — Álvaro</p>
+            <p class="text-xs text-3">Voz masculina · neutra · narrativa</p>
+          </div>
+          <span class="text-xs accent font-bold" data-i18n="selected">● Seleccionada</span>
+        </div>
+        <div class="flex items-center gap-3 rounded-lg px-4 py-3" style="background:#0d0d14">
+          <span class="text-lg">🇲🇽</span>
+          <div class="flex-1">
+            <p class="text-sm text-2">Español México — Dalia</p>
+            <p class="text-xs text-muted">Voz femenina · cálida</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 rounded-lg px-4 py-3" style="background:#0d0d14">
+          <span class="text-lg">🇺🇸</span>
+          <div class="flex-1">
+            <p class="text-sm text-2">English US — Jenny</p>
+            <p class="text-xs text-muted">Female · professional</p>
+          </div>
+        </div>
+        <div class="text-center text-xs text-3 pt-2" data-i18n="more_voices">+ 47 voces más en el menú desplegable</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════ -->
+<!-- WORKFLOW FACELESS -->
+<!-- ════════════════════════════════════════════════════ -->
+<section class="py-24 px-5 surface-b">
+  <div class="max-w-6xl mx-auto">
+    <div class="flex flex-wrap gap-2 mb-5 justify-center md:justify-start">
+      <span class="badge badge-violet" data-i18n="wf_badge1">⭐ Caso de uso estrella</span>
+      <span class="badge badge-green" data-i18n="wf_badge2">💰 Monetización real desde el mes 1</span>
+    </div>
+    <h2 class="text-3xl md:text-5xl font-black mb-4 max-w-3xl" data-i18n-html="wf_h2">El workflow completo para un<br/><span class="accent">canal faceless monetizado.</span></h2>
+    <p class="text-2 text-lg max-w-2xl mb-12" data-i18n-html="wf_sub">Los canales faceless generan entre <strong class="text-white">500€ y 15.000€/mes</strong> sin aparecer en cámara. CloneFlow te da todas las herramientas.</p>
+
+    <div class="grid md:grid-cols-4 gap-4 mb-14" id="wf_steps"></div>
+
+    <div class="card p-8 md:p-10">
+      <h3 class="font-black text-xl md:text-2xl mb-8 text-center" data-i18n="wf_numbers">Los números reales de un canal faceless</h3>
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <div>
+          <p class="text-4xl md:text-5xl font-black neon-green mb-2 tabular-nums">4–8</p>
+          <p class="text-sm text-2" data-i18n="wf_stat1">vídeos por semana producibles con CloneFlow</p>
+        </div>
+        <div class="md:border-x border-[#1f1f2b]">
+          <p class="text-4xl md:text-5xl font-black accent mb-2 tabular-nums">~1h</p>
+          <p class="text-sm text-2" data-i18n="wf_stat2">de audio por guión de 50.000 caracteres</p>
+        </div>
+        <div>
+          <p class="text-4xl md:text-5xl font-black mb-2 tabular-nums" style="color:#fbbf24">500–15K€</p>
+          <p class="text-sm text-2" data-i18n="wf_stat3">ingresos/mes de canales establecidos</p>
+        </div>
+      </div>
+      <div class="mt-8 pt-6 border-t border-[#1f1f2b] text-center space-y-2">
+        <p class="text-2 text-sm" data-i18n-html="wf_compare1">Con ElevenLabs + Resemble AI pagarías <strong class="neon-red">148€/mes</strong> para el mismo workflow.</p>
+        <p class="text-2 text-sm" data-i18n-html="wf_compare2">Con CloneFlow Pro pagas <strong class="text-white">497€ una sola vez</strong> y produces para siempre.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════ -->
+<!-- CALCULADORA -->
+<!-- ════════════════════════════════════════════════════ -->
+<section class="py-24 px-5 surface-a" id="comparativa">
+  <div class="max-w-3xl mx-auto">
+    <div class="text-center mb-12">
+      <span class="badge badge-amber mb-4" data-i18n="calc_kicker">💸 Calculadora de ahorro</span>
+      <h2 class="text-3xl md:text-5xl font-black mb-3" data-i18n-html="calc_h2">Calcula cuánto <span class="accent">ahorras</span> este año</h2>
+      <p class="text-2" data-i18n="calc_sub">Compara con las herramientas que ya conoces.</p>
+    </div>
+    <div class="card p-8">
+      <p class="text-sm text-2 mb-3 font-semibold" data-i18n="calc_using">Selecciona las herramientas que usas (o usarías):</p>
+      <div class="flex flex-wrap gap-2 mb-8">
+        <button onclick="toggleTool(this,'elevenlabs')" data-active="true" class="tool-btn active rounded-lg px-4 py-2 text-sm font-bold transition">ElevenLabs $99</button>
+        <button onclick="toggleTool(this,'resemble')" data-active="true" class="tool-btn active rounded-lg px-4 py-2 text-sm font-bold transition">Resemble $49</button>
+        <button onclick="toggleTool(this,'murf')" data-active="false" class="tool-btn rounded-lg px-4 py-2 text-sm font-bold transition">Murf $66</button>
+        <button onclick="toggleTool(this,'descript')" data-active="false" class="tool-btn rounded-lg px-4 py-2 text-sm font-bold transition">Descript $24</button>
+      </div>
+      <div class="grid md:grid-cols-3 gap-4 mb-6">
+        <div class="rounded-xl p-5 text-center border" style="background:#0d0d14;border-color:#1f1f2b">
+          <p class="text-xs text-3 mb-1.5 uppercase tracking-wider font-semibold" data-i18n="calc_month">Pagas al mes</p>
+          <p class="text-3xl md:text-4xl font-black neon-red tabular-nums" id="monthlyCloud">148 €</p>
+        </div>
+        <div class="rounded-xl p-5 text-center border" style="background:#0d0d14;border-color:#1f1f2b">
+          <p class="text-xs text-3 mb-1.5 uppercase tracking-wider font-semibold" data-i18n="calc_year">Pagas al año</p>
+          <p class="text-3xl md:text-4xl font-black tabular-nums" style="color:#fb7185" id="yearlyCloud">1.776 €</p>
+        </div>
+        <div class="rounded-xl p-5 text-center border" style="background:#0a1410;border-color:#22c55e44">
+          <p class="text-xs text-3 mb-1.5 uppercase tracking-wider font-semibold" data-i18n="calc_save">Ahorras en 12 meses</p>
+          <p class="text-3xl md:text-4xl font-black neon-green tabular-nums" id="savings">+1.279 €</p>
+        </div>
+      </div>
+      <div class="bg-[#0d0d14] rounded-full h-3 overflow-hidden mb-3 border border-[#1f1f2b]">
+        <div id="savingsBar" class="h-full rounded-full transition-all duration-500 shimmer" style="width:72%;background:linear-gradient(90deg,#7c3aed,#22c55e)"></div>
+      </div>
+      <p class="text-sm text-2 text-center" id="savingsMsg">Con CloneFlow Pro (497€) recuperas la inversión en <strong class="text-white">menos de 1 mes</strong>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════ -->
+<!-- PRIVACIDAD -->
+<!-- ════════════════════════════════════════════════════ -->
+<section class="py-24 px-5 surface-b">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-12">
+      <span class="badge badge-violet mb-4" data-i18n="priv_kicker">🔒 Privacidad real</span>
+      <h2 class="text-3xl md:text-5xl font-black mb-3" data-i18n-html="priv_h2">Tus guiones no salen de tu <span class="accent">ordenador.</span> Nunca.</h2>
+      <p class="text-2 max-w-2xl mx-auto" data-i18n="priv_sub">Sin servidores. Sin telemetría. Sin filtros de contenido. Si tu PC puede correrlo, puedes generarlo.</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4" id="priv_cards"></div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════ -->
+<!-- PARA QUIÉN -->
+<!-- ════════════════════════════════════════════════════ -->
+<section class="py-24 px-5 surface-a">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-12">
+      <span class="badge badge-violet mb-4" data-i18n="who_kicker">🎯 Para quién es</span>
+      <h2 class="text-3xl md:text-5xl font-black" data-i18n-html="who_h2">¿Para quién es <span class="accent">CloneFlow</span>?</h2>
+    </div>
+    <div class="grid md:grid-cols-2 gap-4" id="who_cards"></div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════ -->
+<!-- LEAD MAGNET -->
+<!-- ════════════════════════════════════════════════════ -->
+<section class="py-20 px-5 surface-b">
+  <div class="max-w-3xl mx-auto">
+    <div class="card-green p-8 md:p-12 text-center relative overflow-hidden">
+      <div class="absolute -top-20 -right-20 w-40 h-40 rounded-full" style="background:radial-gradient(circle,rgba(34,197,94,.25),transparent 70%)"></div>
+      <p class="text-5xl mb-4">🎁</p>
+      <span class="badge badge-green mb-4" data-i18n="lead_kicker">PDF gratuito</span>
+      <h2 class="text-2xl md:text-4xl font-black mb-3" data-i18n-html="lead_h2">Los <span class="text-[#4ade80]">10 nichos faceless</span> más rentables de 2025</h2>
+      <p class="text-2 mb-8 max-w-md mx-auto" data-i18n="lead_sub">Guía PDF con ejemplos reales, CPM por nicho, plantillas de guion y los 3 errores que matan canales nuevos.</p>
+      <div id="leadForm">
+        <div class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto mb-3">
+          <input type="email" id="leadEmail" placeholder="tu@email.com" class="input-base flex-1"/>
+          <button onclick="submitLead()" class="bg-[#22c55e] hover:bg-[#16a34a] text-black font-black px-6 py-3 rounded-xl text-sm transition whitespace-nowrap" data-i18n="lead_btn">DESCARGAR GRATIS</button>
+        </div>
+        <p class="text-xs text-muted" data-i18n="lead_fine">Sin spam. Solo contenido de valor sobre IA y monetización. Te llega desde info@cloneflowai.online.</p>
+      </div>
+      <div id="leadThankYou" class="hidden">
+        <div class="card-green px-6 py-5 inline-block">
+          <p class="text-[#4ade80] font-black text-lg mb-1">✅ <span data-i18n="lead_thanks">¡Gracias! Revisa tu email.</span></p>
+          <p class="text-2 text-sm" data-i18n="lead_check">Si no lo ves, revisa la carpeta de spam (de info@cloneflowai.online).</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════ -->
+<!-- PRECIO -->
+<!-- ════════════════════════════════════════════════════ -->
+<section class="py-24 px-5 surface-a" id="precio">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-12">
+      <span class="badge badge-amber mb-4" data-i18n="price_kicker">💎 Pago único · Acceso vitalicio</span>
+      <h2 class="text-3xl md:text-5xl font-black mb-3" data-i18n-html="price_h2">Elige tu plan. <span class="accent">Una sola vez.</span></h2>
+      <p class="text-2" data-i18n="price_sub">Sin sorpresas. Sin renovaciones. Tuyo para siempre.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6 items-stretch">
+      <!-- STARTER -->
+      <div class="card p-8 flex flex-col">
+        <div class="flex items-center justify-between mb-3">
+          <p class="text-xs font-bold tracking-widest text-3 uppercase" data-i18n="plan1_name">Starter</p>
+          <span class="text-xs text-muted" data-i18n="plan1_for">Solo motor de voz</span>
+        </div>
+        <div class="mb-1 flex items-baseline gap-2">
+          <span class="text-5xl md:text-6xl font-black tabular-nums">297</span>
+          <span class="text-2xl accent font-bold">€</span>
+          <span class="text-sm text-muted line-through">497€</span>
+        </div>
+        <p class="text-3 text-sm mb-6" data-i18n="plan_once">Pago único · IVA incluido</p>
+        <ul class="space-y-2.5 text-sm mb-8 flex-1" id="starter_features"></ul>
+        <a href="https://pay.hotmart.com/K105578551U?off=starter" target="_blank" rel="noopener" class="btn-secondary block w-full text-center font-bold py-4 rounded-xl text-base mb-3" data-i18n="plan1_cta">COMPRAR STARTER · 297€</a>
+        <div class="text-center">
+          <div class="flex justify-center gap-2 flex-wrap mb-2">
+            <span class="text-[10px] card px-2 py-1 text-3 font-semibold">Hotmart</span>
+            <span class="text-[10px] card px-2 py-1 text-3 font-semibold">Stripe</span>
+            <span class="text-[10px] card px-2 py-1 text-3 font-semibold">Visa · MC · Amex</span>
+          </div>
+          <p class="text-xs text-muted" data-i18n="plan_pay">Tarjeta · Stripe vía Hotmart</p>
+        </div>
+      </div>
+
+      <!-- PRO -->
+      <div class="card-glow p-8 flex flex-col relative overflow-hidden glow-violet">
+        <div class="absolute top-0 inset-x-0 h-1" style="background:linear-gradient(90deg,#a78bfa,#22c55e)"></div>
+        <div class="flex items-center justify-between mb-3">
+          <p class="text-xs font-bold tracking-widest accent uppercase" data-i18n="plan2_name">Pro · Más popular</p>
+          <span class="badge badge-green" data-i18n="best_value">⭐ MEJOR VALOR</span>
+        </div>
+        <div class="mb-1 flex items-baseline gap-2">
+          <span class="text-5xl md:text-6xl font-black tabular-nums">497</span>
+          <span class="text-2xl accent font-bold">€</span>
+          <span class="text-sm text-muted line-through">697€</span>
+        </div>
+        <p class="text-3 text-sm mb-6" data-i18n="plan_once">Pago único · IVA incluido</p>
+        <ul class="space-y-2.5 text-sm mb-6 flex-1" id="pro_features"></ul>
+
+        <!-- Bonus stack -->
+        <div class="card p-4 mb-5" style="background:#0d0a18;border-color:#5b21b655">
+          <p class="text-xs font-black accent uppercase tracking-wider mb-3" data-i18n="bonuses">🎁 BONUS incluidos</p>
+          <ul class="space-y-1.5 text-xs text-2">
+            <li class="flex justify-between gap-2"><span>📕 <span data-i18n="bonus1">Guía 10 nichos faceless rentables</span></span><span class="text-muted line-through">47€</span></li>
+            <li class="flex justify-between gap-2"><span>🎬 <span data-i18n="bonus2">Plantillas de guion (50K chars)</span></span><span class="text-muted line-through">37€</span></li>
+            <li class="flex justify-between gap-2"><span>📞 <span data-i18n="bonus3">Soporte prioritario directo</span></span><span class="text-muted line-through">99€</span></li>
+            <li class="flex justify-between gap-2 pt-1.5 border-t border-[#2a2a3a]"><span class="font-bold text-white" data-i18n="bonus_total">Valor total bonus</span><span class="font-black neon-green">183€ GRATIS</span></li>
+          </ul>
+        </div>
+
+        <p class="text-sm font-bold flex items-center gap-2 mb-4" style="color:#fca5a5">
+          <span class="w-2 h-2 rounded-full bg-[#ef4444] pulse inline-block"></span>
+          <span data-i18n="scarcity">Solo quedan 7 licencias a este precio</span>
+        </p>
+        <a href="https://pay.hotmart.com/K105578551U" target="_blank" rel="noopener" class="btn-primary block w-full text-center font-black py-4 rounded-xl text-base md:text-lg mb-3" data-i18n="plan2_cta">COMPRAR PRO · 497€ →</a>
+        <p class="text-xs text-3 text-center mb-3" data-i18n="roi">⚡ Recuperas la inversión en &lt;1 mes vs ElevenLabs + Resemble</p>
+        <div class="text-center">
+          <div class="flex justify-center gap-2 flex-wrap mb-2">
+            <span class="text-[10px] card px-2 py-1 text-3 font-semibold">Hotmart</span>
+            <span class="text-[10px] card px-2 py-1 text-3 font-semibold">Stripe</span>
+            <span class="text-[10px] card px-2 py-1 text-3 font-semibold">Visa · MC · Amex</span>
+          </div>
+          <p class="text-xs text-muted" data-i18n="plan_pay">Tarjeta · Stripe vía Hotmart</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- GUARANTEE STRIP -->
+    <div class="mt-10 card p-6 md:p-8 flex flex-col md:flex-row items-center gap-6 max-w-3xl mx-auto" style="background:linear-gradient(180deg,#0d1f15,#0a1410);border-color:#16a34a55">
+      <div class="flex-shrink-0">
+        <svg viewBox="0 0 80 80" width="80" height="80">
+          <circle cx="40" cy="40" r="36" fill="none" stroke="#22c55e" stroke-width="2"/>
+          <circle cx="40" cy="40" r="30" fill="#22c55e" opacity=".15"/>
+          <text x="40" y="38" text-anchor="middle" font-size="22" font-weight="900" fill="#4ade80" font-family="Inter">7</text>
+          <text x="40" y="54" text-anchor="middle" font-size="9" font-weight="700" fill="#86efac" font-family="Inter" letter-spacing="1">DÍAS</text>
+        </svg>
+      </div>
+      <div class="text-center md:text-left flex-1">
+        <h3 class="font-black text-lg md:text-xl text-white mb-1.5" data-i18n="guarantee_h3">Garantía de devolución 7 días — sin preguntas</h3>
+        <p class="text-2 text-sm" data-i18n-html="guarantee_desc">Pruébalo durante 7 días. Si no es lo que esperas, te devolvemos el <strong>100%</strong> de tu inversión. Sin formularios, sin justificación. Escribe a <a href="mailto:info@cloneflowai.online" class="accent underline">info@cloneflowai.online</a>.</p>
+      </div>
+    </div>
+
+    <p class="text-center text-sm text-3 mt-8 flex flex-wrap items-center justify-center gap-x-4 gap-y-1" data-i18n-html="guarantee_line">
+      <span>🔒 Pago 100% seguro</span> <span class="text-muted">·</span>
+      <span>✉️ Activación en &lt;24h</span> <span class="text-muted">·</span>
+      <span>📧 Soporte: <a href="mailto:info@cloneflowai.online" class="accent">info@cloneflowai.online</a></span>
+    </p>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════ -->
+<!-- TESTIMONIOS -->
+<!-- ════════════════════════════════════════════════════ -->
+<section class="py-24 px-5 surface-b">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-12">
+      <span class="badge badge-violet mb-4" data-i18n="test_kicker">⭐ Reviews verificadas</span>
+      <h2 class="text-3xl md:text-5xl font-black mb-3" data-i18n-html="test_h2">Lo que dicen nuestros <span class="accent">usuarios</span></h2>
+      <p class="text-2" data-i18n="test_sub">Creadores de contenido, locutores y agencias que ya producen con CloneFlow.</p>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5" id="testimonials"></div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════ -->
+<!-- FAQ -->
+<!-- ════════════════════════════════════════════════════ -->
+<section class="py-24 px-5 surface-a">
+  <div class="max-w-3xl mx-auto">
+    <div class="text-center mb-12">
+      <span class="badge badge-violet mb-4" data-i18n="faq_kicker">❓ FAQ</span>
+      <h2 class="text-3xl md:text-5xl font-black" data-i18n-html="faq_h2">Preguntas <span class="accent">Frecuentes</span></h2>
+    </div>
+    <div class="space-y-3" id="faqList"></div>
+    <p class="text-center mt-10 text-2 text-sm" data-i18n-html="faq_more">¿Tienes otra pregunta? Escríbenos a <a href="mailto:info@cloneflowai.online" class="accent underline">info@cloneflowai.online</a> o usa el chat ↘️</p>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════ -->
+<!-- URGENCIA -->
+<!-- ════════════════════════════════════════════════════ -->
+<section class="py-20 px-5" style="background:linear-gradient(180deg,#0a0500,#070405)">
+  <div class="max-w-3xl mx-auto">
+    <div class="rounded-2xl p-8 md:p-10 text-center border" style="background:linear-gradient(135deg,#1a0f00,#0f0700);border-color:#f59e0b33">
+      <span class="badge badge-amber mb-5 inline-flex" data-i18n="urg_badge">⏳ Oferta por tiempo limitado</span>
+      <h2 class="text-2xl md:text-4xl font-black mb-3" style="color:#fde68a" data-i18n-html="urg_h2">El precio sube a <span style="color:#fbbf24">697€</span> el 2 de Mayo.</h2>
+      <p class="text-base mb-8" style="color:#fcd34d" data-i18n="urg_sub">Asegura tu acceso ahora al precio actual antes de que caduque la oferta.</p>
+      <div class="flex justify-center gap-3 md:gap-4 flex-wrap mb-8">
+        <div class="text-center"><div class="cdigit"><span id="urgDays" class="text-2xl md:text-3xl font-black tabular-nums" style="color:#fbbf24">--</span></div><div class="ulabel" data-i18n="days">días</div></div>
+        <div class="text-2xl md:text-3xl font-black self-start pt-3" style="color:#f59e0b">:</div>
+        <div class="text-center"><div class="cdigit"><span id="urgHours" class="text-2xl md:text-3xl font-black tabular-nums" style="color:#fbbf24">--</span></div><div class="ulabel" data-i18n="hours">horas</div></div>
+        <div class="text-2xl md:text-3xl font-black self-start pt-3" style="color:#f59e0b">:</div>
+        <div class="text-center"><div class="cdigit"><span id="urgMins" class="text-2xl md:text-3xl font-black tabular-nums" style="color:#fbbf24">--</span></div><div class="ulabel" data-i18n="mins">minutos</div></div>
+        <div class="text-2xl md:text-3xl font-black self-start pt-3" style="color:#f59e0b">:</div>
+        <div class="text-center"><div class="cdigit"><span id="urgSecs" class="text-2xl md:text-3xl font-black tabular-nums" style="color:#fbbf24">--</span></div><div class="ulabel" data-i18n="secs">segundos</div></div>
+      </div>
+      <a href="#precio" class="btn-amber inline-block font-black text-base md:text-lg px-10 py-4 rounded-xl" data-i18n="urg_cta">ASEGURAR PRECIO ACTUAL →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════ -->
+<!-- CTA FINAL -->
+<!-- ════════════════════════════════════════════════════ -->
+<section class="py-24 px-5 text-center surface-a relative overflow-hidden">
+  <div class="absolute inset-0 hero-grid pointer-events-none opacity-60"></div>
+  <div class="relative max-w-3xl mx-auto">
+    <h2 class="text-4xl md:text-6xl font-black mb-4" data-i18n-html="cta_h2">Empieza a producir hoy.<br/><span class="bg-clip-text text-transparent" style="background-image:linear-gradient(135deg,#a78bfa,#22c55e)">Sin pagar cada mes.</span></h2>
+    <p class="text-2 text-lg mb-10" data-i18n="cta_sub">Más de 1.500€ en herramientas de IA por un solo pago. Para siempre.</p>
+    <a href="#precio" class="btn-primary inline-block text-lg md:text-xl font-black px-12 py-5 rounded-xl" data-i18n="cta_btn">VER PLANES Y PRECIOS →</a>
+    <p class="mt-6 text-xs text-muted">🔒 <span data-i18n="cta_fine">Pago único · Garantía 7 días · Activación en menos de 24h</span></p>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════ -->
+<!-- FOOTER -->
+<!-- ════════════════════════════════════════════════════ -->
+<footer class="pt-16 pb-8 border-t border-[#15151f] surface-b">
+  <div class="max-w-6xl mx-auto px-5">
+    <div class="grid md:grid-cols-4 gap-10 mb-10">
+      <div class="md:col-span-2 max-w-sm">
+        <a href="#" class="flex items-center gap-2 mb-3">
+          <span class="w-8 h-8 rounded-lg flex items-center justify-center" style="background:linear-gradient(135deg,#a78bfa,#7c3aed)">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l3-7 3 14 3-10 3 7 2-4"/></svg>
+          </span>
+          <span class="text-lg font-black">Clone<span class="accent">Flow</span></span>
+        </a>
+        <p class="text-2 text-sm leading-relaxed mb-4" data-i18n-html="footer_desc">Software profesional de generación y clonación de voz con IA. <strong class="text-white">100% local. Pago único de por vida.</strong></p>
+        <div class="space-y-1.5 text-sm">
+          <p class="text-3"><span class="text-muted">🌐</span> <a href="https://cloneflowai.online" class="hover:text-white transition">cloneflowai.online</a></p>
+          <p class="text-3"><span class="text-muted">✉️</span> <a href="mailto:info@cloneflowai.online" class="hover:text-white transition">info@cloneflowai.online</a></p>
+          <p class="text-muted text-xs mt-3" data-i18n="footer_response">Respuesta en menos de 24h · Soporte en ES/EN</p>
+        </div>
+        <p class="text-muted text-xs mt-5">© 2026 CloneFlow AI · <span data-i18n="footer_rights">Todos los derechos reservados</span></p>
+      </div>
+
+      <div>
+        <p class="text-3 font-bold uppercase tracking-wider text-xs mb-4" data-i18n="footer_product">Producto</p>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#funciones" class="text-2 hover:accent transition" data-i18n="footer_features">Funciones</a></li>
+          <li><a href="#voces" class="text-2 hover:accent transition" data-i18n="nav_voices">Voces</a></li>
+          <li><a href="#comparativa" class="text-2 hover:accent transition" data-i18n="footer_compare">Calculadora</a></li>
+          <li><a href="#precio" class="text-2 hover:accent transition">Starter · 297€</a></li>
+          <li><a href="#precio" class="text-2 hover:accent transition">Pro · 497€</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="text-3 font-bold uppercase tracking-wider text-xs mb-4" data-i18n="footer_support">Soporte & Legal</p>
+        <ul class="space-y-2 text-sm">
+          <li><a href="mailto:info@cloneflowai.online" class="text-2 hover:accent transition" data-i18n="footer_contact">Contacto</a></li>
+          <li><a href="mailto:info@cloneflowai.online?subject=Activación%20HWID%20CloneFlow" class="text-2 hover:accent transition" data-i18n="footer_activate">Activación / HWID</a></li>
+          <li><button onclick="openChat()" class="text-2 hover:accent transition text-left" data-i18n="footer_chat_link">Chat de soporte</button></li>
+          <li><a href="#faqList" class="text-2 hover:accent transition">FAQ</a></li>
+          <li><a href="legal.html#aviso" class="text-2 hover:accent transition" data-i18n="legal_notice">Aviso Legal</a></li>
+          <li><a href="legal.html#privacidad" class="text-2 hover:accent transition" data-i18n="privacy">Privacidad</a></li>
+          <li><a href="legal.html#terminos" class="text-2 hover:accent transition" data-i18n="terms">Términos</a></li>
+          <li><a href="legal.html#garantia" class="text-2 hover:accent transition" data-i18n="guarantee">Garantía</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-[#15151f] pt-6 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-muted">
+      <p>cloneflowai.online · <span data-i18n="footer_payments">Pagos procesados de forma segura por Hotmart (Stripe)</span></p>
+      <div class="flex gap-4">
+        <a href="legal.html#privacidad" class="hover:text-3 transition" data-i18n="privacy">Privacidad</a>
+        <a href="legal.html#cookies" class="hover:text-3 transition">Cookies</a>
+        <a href="legal.html#terminos" class="hover:text-3 transition" data-i18n="terms">Términos</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ════════════════════════════════════════════════════ -->
+<!-- COOKIE BANNER -->
+<!-- ════════════════════════════════════════════════════ -->
+<div id="cookieBanner" class="fixed bottom-0 inset-x-0 z-50 bg-[#0a0a14]/95 backdrop-blur-xl border-t border-[#1f1f2b] px-5 py-4 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-2xl" style="display:none">
+  <p class="text-sm text-2 max-w-xl leading-relaxed" data-i18n-html="cookie_text">
+    Solo usamos cookies técnicas necesarias. Sin rastreo ni publicidad. <a href="legal.html#cookies" class="accent underline">Más información</a>.
+  </p>
+  <div class="flex gap-3 flex-shrink-0">
+    <button onclick="rejectCookies()" class="text-xs btn-secondary px-4 py-2 rounded-lg font-semibold" data-i18n="cookie_reject">Solo necesarias</button>
+    <button onclick="acceptCookies()" class="text-xs btn-primary px-5 py-2 rounded-lg font-semibold" data-i18n="cookie_accept">Aceptar y cerrar</button>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════════ -->
+<!-- CHATBOT -->
+<!-- ════════════════════════════════════════════════════ -->
+<button id="chatBtn" onclick="toggleChat()" aria-label="Chat de soporte"
+  class="fixed bottom-6 right-6 z-[70] w-14 h-14 md:w-16 md:h-16 rounded-full text-white text-2xl flex items-center justify-center transition btn-primary"
+  style="box-shadow:0 0 32px rgba(124,58,237,.55)">💬</button>
+
+<div id="chatPanel" class="fixed bottom-24 right-4 md:right-6 z-[70] w-[calc(100vw-2rem)] sm:w-[360px] flex-col rounded-2xl overflow-hidden shadow-2xl border border-[#4c1d9555]" style="height:480px;background:#0a0a14">
+  <div class="flex items-center justify-between px-4 py-3" style="background:linear-gradient(180deg,#9b6cf3,#7c3aed)">
+    <div class="flex items-center gap-2">
+      <span>🤖</span>
+      <div>
+        <p class="font-bold text-sm text-white">CloneFlow AI</p>
+        <p class="text-[10px] text-white/80 flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-[#4ade80] pulse"></span> <span data-i18n="chat_online">En línea · respuesta &lt;24h</span></p>
+      </div>
+    </div>
+    <button onclick="closeChat()" aria-label="Cerrar" class="text-white/80 hover:text-white text-xl leading-none">✕</button>
+  </div>
+  <div id="chatMessages" class="flex-1 overflow-y-auto p-3 space-y-3 flex flex-col" style="height:300px">
+    <div class="chat-bot p-3 text-xs leading-relaxed max-w-[90%]" id="chatGreeting">¡Hola! 👋 Soy el asistente de CloneFlow. ¿En qué puedo ayudarte?</div>
+  </div>
+  <div id="quickReplies" class="px-3 pb-2 flex flex-wrap gap-1 border-t border-[#1f1f2b] pt-2">
+    <button onclick="quickReply('pro')" data-qr="pro" class="text-[10px] card px-3 py-1 rounded-full text-2 hover:text-white hover:border-[#7c3aed] transition">¿Qué incluye Pro?</button>
+    <button onclick="quickReply('clone')" data-qr="clone" class="text-[10px] card px-3 py-1 rounded-full text-2 hover:text-white hover:border-[#7c3aed] transition">¿Cómo clono voz?</button>
+    <button onclick="quickReply('pago')" data-qr="pago" class="text-[10px] card px-3 py-1 rounded-full text-2 hover:text-white hover:border-[#7c3aed] transition">¿Cómo pago?</button>
+    <button onclick="quickReply('garantia')" data-qr="garantia" class="text-[10px] card px-3 py-1 rounded-full text-2 hover:text-white hover:border-[#7c3aed] transition">¿Garantía?</button>
+    <button onclick="quickReply('mac')" data-qr="mac" class="text-[10px] card px-3 py-1 rounded-full text-2 hover:text-white hover:border-[#7c3aed] transition">¿Mac?</button>
+  </div>
+  <div class="flex gap-2 p-3 border-t border-[#1f1f2b]">
+    <input id="chatInput" type="text" placeholder="Escribe tu pregunta..."
+      class="input-base flex-1 text-xs py-2"
+      onkeydown="if(event.key==='Enter')sendChat()"/>
+    <button onclick="sendChat()" aria-label="Enviar" class="btn-primary rounded-lg px-3 py-2 text-xs">➤</button>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════════ -->
+<!-- EXIT POPUP -->
+<!-- ════════════════════════════════════════════════════ -->
+<div id="exitPopup" class="fixed inset-0 z-[80] items-center justify-center bg-black/85 backdrop-blur-sm p-4">
+  <div class="card-glow max-w-md w-full p-8 text-center relative">
+    <button onclick="closeExit()" aria-label="Cerrar" class="absolute top-4 right-4 text-3 hover:text-white text-xl leading-none">✕</button>
+    <div class="text-5xl mb-4">🎯</div>
+    <h3 class="text-2xl font-black mb-3" data-i18n="exit_h3">¡Espera! No te vayas sin tu descuento</h3>
+    <p class="text-2 text-sm mb-6 leading-relaxed" data-i18n-html="exit_sub">Oferta especial de última hora.<br/>Esta ventana expira en:</p>
+    <div class="flex justify-center gap-4 mb-6">
+      <div class="text-center"><div class="cdigit"><span id="exitMins" class="text-2xl font-black tabular-nums" style="color:#fbbf24">10</span></div><div class="ulabel" data-i18n="exit_min_label">min</div></div>
+      <div class="text-2xl font-black self-start pt-3" style="color:#f59e0b">:</div>
+      <div class="text-center"><div class="cdigit"><span id="exitSecs" class="text-2xl font-black tabular-nums" style="color:#fbbf24">00</span></div><div class="ulabel" data-i18n="exit_sec_label">seg</div></div>
+    </div>
+    <a href="#precio" onclick="closeExit()" class="btn-primary block w-full font-black py-4 rounded-xl text-base mb-3" data-i18n="exit_cta">VER MI DESCUENTO →</a>
+    <button onclick="closeExit()" class="text-xs text-muted hover:text-3 transition" data-i18n="exit_dismiss">No, prefiero pagar precio completo</button>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════════ -->
+<!-- STICKY MOBILE CTA -->
+<!-- ════════════════════════════════════════════════════ -->
+<div id="stickyMobile" class="items-center justify-between gap-3">
+  <div>
+    <p class="text-xs text-3 font-semibold" data-i18n="mob_price">Pro · Acceso vitalicio</p>
+    <p class="text-base font-black text-white"><span class="tabular-nums">497€</span> <span class="text-xs text-muted line-through font-medium">697€</span></p>
+  </div>
+  <a href="https://pay.hotmart.com/K105578551U" target="_blank" rel="noopener" class="btn-primary text-sm font-black px-5 py-3 rounded-xl flex-1 text-center" data-i18n="mob_cta">COMPRAR →</a>
+</div>
+
+<!-- ════════════════════════════════════════════════════ -->
+<!-- TOOL BUTTON STYLE -->
+<!-- ════════════════════════════════════════════════════ -->
+<style>
+  .tool-btn{background:#0d0d14;border:1px solid var(--line-2);color:var(--text-3)}
+  .tool-btn.active{background:rgba(139,92,246,.15);border-color:var(--accent);color:var(--accent-2);box-shadow:0 0 24px rgba(139,92,246,.18)}
+  .tool-btn:hover{border-color:var(--accent)}
+</style>
+
+<script>
+// ════════════════════════════════════════════════════
+// I18N
+// ════════════════════════════════════════════════════
+const T={
+  es:{
+    page_title:'CloneFlow — Genera y Clona Voces con IA · Pago Único de por Vida',
+    flash_text:'⚡ OFERTA FLASH — 40% DESCUENTO · La oferta termina en',
+    flash_cta:'RESERVAR PRECIO',
+    nav_features:'Funciones',nav_voices:'Voces',nav_why:'Calculadora',nav_price:'Precios',nav_buy:'Comprar',
+    hero_badge:'⚡ El arma secreta de los canales Faceless',
+    hero_badge2:'🔒 100% Local · Sin Nube',
+    hero_h1_pre:'Genera y clona voces con IA.',
+    hero_h1_post:'Sin pagar cada mes. Para siempre.',
+    hero_sub:'Pega tu guión de <strong class="text-white">hasta 50.000 caracteres</strong> (~1 hora de audio), elige entre 50 voces en 20+ idiomas o <strong class="text-white">clona cualquier voz</strong> — todo local, sin servidores externos, sin suscripciones.',
+    step1:'📝 Pega tu guión (50K)',step2:'🎙️ Elige o clona voz',step3:'🚀 Exporta WAV · Sube',
+    hero_cta:'ACCESO VITALICIO PRO — 497€',hero_plans:'Ver Planes',
+    hero_t1:'Pago único',hero_t2:'Garantía 7 días',hero_t3:'Activación <24h',hero_t4:'Windows 10/11',
+    hero_viewers:'personas viendo ahora',replaces:'Reemplaza herramientas por valor de',
+    trusted_by:'Más de 1.500 creadores ya producen con CloneFlow',
+    feat_kicker:'2 productos · 1 pago',
+    feat_h2:'Dos herramientas. Un pago. <span class="accent">Producción ilimitada.</span>',
+    feat_sub:'Lo que otros cobran por separado y cada mes, aquí viene incluido de por vida.',
+    feat1_badge:'Motor de Voz IA',feat1_h3:'Generador de Voz Profesional',
+    feat1_desc:'Pega hasta 50.000 caracteres y genera narración de calidad estudio con 50 voces en 20+ idiomas. Sin límite de exportaciones. Sin marca de agua.',
+    feat2_badge:'Clonador IA',feat2_h3:'Clona Cualquier Voz en Segundos',
+    feat2_desc:'Sube una muestra de 30 segundos y genera audio ilimitado con esa voz en cualquier idioma. Clona tu voz o la de cualquier presentador.',
+    feat2_excl:'⚡ Exclusivo Pro',
+    voices_kicker:'Biblioteca de voces',
+    voices_h2:'<span class="accent">50 voces.</span> 20+ idiomas. Un solo software.',
+    voices_sub:'Selecciona la voz desde el menú antes de generar. Hombre, mujer, acento neutro o regional.',
+    voices_preview:'Vista previa en la app',selected:'● Seleccionada',
+    more_voices:'+ 47 voces más en el menú desplegable',
+    wf_badge1:'⭐ Caso de uso estrella',wf_badge2:'💰 Monetización real desde el mes 1',
+    wf_h2:'El workflow completo para un<br/><span class="accent">canal faceless monetizado.</span>',
+    wf_sub:'Los canales faceless generan entre <strong class="text-white">500€ y 15.000€/mes</strong> sin aparecer en cámara. CloneFlow te da todas las herramientas.',
+    wf_numbers:'Los números reales de un canal faceless',
+    wf_stat1:'vídeos por semana producibles con CloneFlow',
+    wf_stat2:'de audio por guión de 50.000 caracteres',
+    wf_stat3:'ingresos/mes de canales establecidos',
+    wf_compare1:'Con ElevenLabs + Resemble AI pagarías <strong class="neon-red">148€/mes</strong> para el mismo workflow.',
+    wf_compare2:'Con CloneFlow Pro pagas <strong class="text-white">497€ una sola vez</strong> y produces para siempre.',
+    calc_kicker:'💸 Calculadora de ahorro',
+    calc_h2:'Calcula cuánto <span class="accent">ahorras</span> este año',
+    calc_sub:'Compara con las herramientas que ya conoces.',
+    calc_using:'Selecciona las herramientas que usas (o usarías):',
+    calc_month:'Pagas al mes',calc_year:'Pagas al año',calc_save:'Ahorras en 12 meses',
+    priv_kicker:'🔒 Privacidad real',
+    priv_h2:'Tus guiones no salen de tu <span class="accent">ordenador.</span> Nunca.',
+    priv_sub:'Sin servidores. Sin telemetría. Sin filtros de contenido. Si tu PC puede correrlo, puedes generarlo.',
+    who_kicker:'🎯 Para quién es',
+    who_h2:'¿Para quién es <span class="accent">CloneFlow</span>?',
+    lead_kicker:'PDF gratuito',
+    lead_h2:'Los <span class="text-[#4ade80]">10 nichos faceless</span> más rentables de 2025',
+    lead_sub:'Guía PDF con ejemplos reales, CPM por nicho, plantillas de guion y los 3 errores que matan canales nuevos.',
+    lead_btn:'DESCARGAR GRATIS',
+    lead_fine:'Sin spam. Solo contenido de valor sobre IA y monetización. Te llega desde info@cloneflowai.online.',
+    lead_thanks:'¡Gracias! Revisa tu email.',
+    lead_check:'Si no lo ves, revisa la carpeta de spam (de info@cloneflowai.online).',
+    price_kicker:'💎 Pago único · Acceso vitalicio',
+    price_h2:'Elige tu plan. <span class="accent">Una sola vez.</span>',
+    price_sub:'Sin sorpresas. Sin renovaciones. Tuyo para siempre.',
+    plan1_name:'Starter',plan1_for:'Solo motor de voz',
+    plan2_name:'Pro · Más popular',plan_once:'Pago único · IVA incluido',plan_pay:'Tarjeta · Stripe vía Hotmart',
+    plan1_cta:'COMPRAR STARTER · 297€',plan2_cta:'COMPRAR PRO · 497€ →',best_value:'⭐ MEJOR VALOR',
+    bonuses:'🎁 BONUS incluidos',
+    bonus1:'Guía 10 nichos faceless rentables',
+    bonus2:'Plantillas de guion (50K chars)',
+    bonus3:'Soporte prioritario directo',
+    bonus_total:'Valor total bonus',
+    scarcity:'Solo quedan 7 licencias a este precio',
+    roi:'⚡ Recuperas la inversión en <1 mes vs ElevenLabs + Resemble',
+    guarantee_h3:'Garantía de devolución 7 días — sin preguntas',
+    guarantee_desc:'Pruébalo durante 7 días. Si no es lo que esperas, te devolvemos el <strong>100%</strong> de tu inversión. Sin formularios, sin justificación. Escribe a <a href="mailto:info@cloneflowai.online" class="accent underline">info@cloneflowai.online</a>.',
+    guarantee_line:'<span>🔒 Pago 100% seguro</span> <span class="text-muted">·</span> <span>✉️ Activación en &lt;24h</span> <span class="text-muted">·</span> <span>📧 Soporte: <a href="mailto:info@cloneflowai.online" class="accent">info@cloneflowai.online</a></span>',
+    test_kicker:'⭐ Reviews verificadas',
+    test_h2:'Lo que dicen nuestros <span class="accent">usuarios</span>',
+    test_sub:'Creadores de contenido, locutores y agencias que ya producen con CloneFlow.',
+    faq_kicker:'❓ FAQ',
+    faq_h2:'Preguntas <span class="accent">Frecuentes</span>',
+    faq_more:'¿Tienes otra pregunta? Escríbenos a <a href="mailto:info@cloneflowai.online" class="accent underline">info@cloneflowai.online</a> o usa el chat ↘️',
+    urg_badge:'⏳ Oferta por tiempo limitado',
+    urg_h2:'El precio sube a <span style="color:#fbbf24">697€</span> el 2 de Mayo.',
+    urg_sub:'Asegura tu acceso ahora al precio actual antes de que caduque la oferta.',
+    urg_cta:'ASEGURAR PRECIO ACTUAL →',
+    days:'días',hours:'horas',mins:'minutos',secs:'segundos',
+    cta_h2:'Empieza a producir hoy.<br/><span class="bg-clip-text text-transparent" style="background-image:linear-gradient(135deg,#a78bfa,#22c55e)">Sin pagar cada mes.</span>',
+    cta_sub:'Más de 1.500€ en herramientas de IA por un solo pago. Para siempre.',
+    cta_btn:'VER PLANES Y PRECIOS →',
+    cta_fine:'Pago único · Garantía 7 días · Activación en menos de 24h',
+    footer_desc:'Software profesional de generación y clonación de voz con IA. <strong class="text-white">100% local. Pago único de por vida.</strong>',
+    footer_response:'Respuesta en menos de 24h · Soporte en ES/EN',
+    footer_rights:'Todos los derechos reservados',
+    footer_product:'Producto',footer_features:'Funciones',footer_compare:'Calculadora',
+    footer_support:'Soporte & Legal',footer_contact:'Contacto',
+    footer_activate:'Activación / HWID',
+    footer_chat_link:'Chat de soporte',
+    legal_notice:'Aviso Legal',privacy:'Privacidad',terms:'Términos',guarantee:'Garantía',
+    footer_payments:'Pagos procesados de forma segura por Hotmart (Stripe)',
+    cookie_text:'Solo usamos cookies técnicas necesarias. Sin rastreo ni publicidad. <a href="legal.html#cookies" class="accent underline">Más información</a>.',
+    cookie_reject:'Solo necesarias',cookie_accept:'Aceptar y cerrar',
+    chat_online:'En línea · respuesta <24h',
+    exit_h3:'¡Espera! No te vayas sin tu descuento',
+    exit_sub:'Oferta especial de última hora.<br/>Esta ventana expira en:',
+    exit_cta:'VER MI DESCUENTO →',exit_dismiss:'No, prefiero pagar precio completo',
+    exit_min_label:'min',exit_sec_label:'seg',
+    chat_greeting:'¡Hola! 👋 Soy el asistente de CloneFlow. ¿En qué puedo ayudarte? Para casos urgentes, escríbenos a info@cloneflowai.online.',
+    chat_placeholder:'Escribe tu pregunta...',
+    qr_pro:'¿Qué incluye Pro?',qr_clone:'¿Cómo clono voz?',qr_pago:'¿Cómo pago?',qr_garantia:'¿Garantía?',qr_mac:'¿Mac?',
+    mob_price:'Pro · Acceso vitalicio',mob_cta:'COMPRAR →',
+  },
+  en:{
+    page_title:'CloneFlow — AI Voice Generator & Cloner · Lifetime One-Time Payment',
+    flash_text:'⚡ FLASH SALE — 40% OFF · Offer ends in',
+    flash_cta:'LOCK IN PRICE',
+    nav_features:'Features',nav_voices:'Voices',nav_why:'Calculator',nav_price:'Pricing',nav_buy:'Buy',
+    hero_badge:'⚡ The secret weapon for Faceless channels',
+    hero_badge2:'🔒 100% Local · No Cloud',
+    hero_h1_pre:'Generate & clone voices with AI.',
+    hero_h1_post:'Without paying every month. Forever.',
+    hero_sub:'Paste your script of <strong class="text-white">up to 50,000 characters</strong> (~1 hour of audio), choose from 50 voices in 20+ languages or <strong class="text-white">clone any voice</strong> — all local, no external servers, no subscriptions.',
+    step1:'📝 Paste your script (50K)',step2:'🎙️ Choose or clone voice',step3:'🚀 Export WAV · Upload',
+    hero_cta:'PRO LIFETIME ACCESS — €497',hero_plans:'See Plans',
+    hero_t1:'One-time payment',hero_t2:'7-day guarantee',hero_t3:'Activation <24h',hero_t4:'Windows 10/11',
+    hero_viewers:'people viewing now',replaces:'Replaces tools worth',
+    trusted_by:'Over 1,500 creators already producing with CloneFlow',
+    feat_kicker:'2 products · 1 payment',
+    feat_h2:'Two tools. One payment. <span class="accent">Unlimited production.</span>',
+    feat_sub:'What others charge separately every month — included here for life.',
+    feat1_badge:'AI Voice Engine',feat1_h3:'Professional Voice Generator',
+    feat1_desc:'Paste up to 50,000 characters and generate studio-quality narration with 50 voices in 20+ languages. Unlimited exports. No watermark.',
+    feat2_badge:'AI Cloner',feat2_h3:'Clone Any Voice in Seconds',
+    feat2_desc:'Upload a 30-second sample and generate unlimited audio in that voice in any language. Clone your voice or any presenter\'s.',
+    feat2_excl:'⚡ Pro Exclusive',
+    voices_kicker:'Voice library',
+    voices_h2:'<span class="accent">50 voices.</span> 20+ languages. One software.',
+    voices_sub:'Select the voice from the menu before generating. Male, female, neutral or regional accent.',
+    voices_preview:'App preview',selected:'● Selected',
+    more_voices:'+ 47 more voices in the dropdown',
+    wf_badge1:'⭐ Star use case',wf_badge2:'💰 Real monetization from month 1',
+    wf_h2:'The complete workflow for a<br/><span class="accent">monetized faceless channel.</span>',
+    wf_sub:'Faceless channels generate between <strong class="text-white">€500 and €15,000/month</strong> with zero camera appearances. CloneFlow gives you all the tools.',
+    wf_numbers:'Real numbers from a faceless channel',
+    wf_stat1:'videos per week producible with CloneFlow',
+    wf_stat2:'audio from a 50,000-character script',
+    wf_stat3:'income/month from established channels',
+    wf_compare1:'With ElevenLabs + Resemble AI you\'d pay <strong class="neon-red">€148/month</strong> for the same workflow.',
+    wf_compare2:'With CloneFlow Pro you pay <strong class="text-white">€497 once</strong> and produce forever.',
+    calc_kicker:'💸 Savings calculator',
+    calc_h2:'Calculate how much you <span class="accent">save</span> this year',
+    calc_sub:'Compare with the tools you already know.',
+    calc_using:'Select the tools you use (or would use):',
+    calc_month:'You pay monthly',calc_year:'You pay yearly',calc_save:'You save in 12 months',
+    priv_kicker:'🔒 Real privacy',
+    priv_h2:'Your scripts never leave your <span class="accent">computer.</span> Ever.',
+    priv_sub:'No servers. No telemetry. No content filters. If your PC can run it, you can generate it.',
+    who_kicker:'🎯 Who is it for',
+    who_h2:'Who is <span class="accent">CloneFlow</span> for?',
+    lead_kicker:'Free PDF',
+    lead_h2:'The <span class="text-[#4ade80]">10 most profitable</span> faceless niches of 2025',
+    lead_sub:'PDF guide with real examples, CPM per niche, script templates and the 3 mistakes that kill new channels.',
+    lead_btn:'DOWNLOAD FREE',
+    lead_fine:'No spam. Only valuable AI and monetization content. Sent from info@cloneflowai.online.',
+    lead_thanks:'Thanks! Check your email.',
+    lead_check:'If you don\'t see it, check spam (from info@cloneflowai.online).',
+    price_kicker:'💎 One-time payment · Lifetime access',
+    price_h2:'Choose your plan. <span class="accent">Just once.</span>',
+    price_sub:'No surprises. No renewals. Yours forever.',
+    plan1_name:'Starter',plan1_for:'Voice engine only',
+    plan2_name:'Pro · Most popular',plan_once:'One-time payment · VAT included',plan_pay:'Card · Stripe via Hotmart',
+    plan1_cta:'BUY STARTER · €297',plan2_cta:'BUY PRO · €497 →',best_value:'⭐ BEST VALUE',
+    bonuses:'🎁 BONUSES included',
+    bonus1:'10 profitable faceless niches guide',
+    bonus2:'Script templates (50K chars)',
+    bonus3:'Direct priority support',
+    bonus_total:'Total bonus value',
+    scarcity:'Only 7 licenses left at this price',
+    roi:'⚡ Recover investment in <1 month vs ElevenLabs + Resemble',
+    guarantee_h3:'7-day no-questions money-back guarantee',
+    guarantee_desc:'Try it for 7 days. If it\'s not what you expect, we refund <strong>100%</strong> of your investment. No forms, no justification. Email <a href="mailto:info@cloneflowai.online" class="accent underline">info@cloneflowai.online</a>.',
+    guarantee_line:'<span>🔒 100% secure payment</span> <span class="text-muted">·</span> <span>✉️ Activation in <24h</span> <span class="text-muted">·</span> <span>📧 Support: <a href="mailto:info@cloneflowai.online" class="accent">info@cloneflowai.online</a></span>',
+    test_kicker:'⭐ Verified reviews',
+    test_h2:'What our <span class="accent">users</span> say',
+    test_sub:'Content creators, voiceover artists and agencies already producing with CloneFlow.',
+    faq_kicker:'❓ FAQ',
+    faq_h2:'Frequently Asked <span class="accent">Questions</span>',
+    faq_more:'Have another question? Email us at <a href="mailto:info@cloneflowai.online" class="accent underline">info@cloneflowai.online</a> or use the chat ↘️',
+    urg_badge:'⏳ Limited time offer',
+    urg_h2:'Price goes up to <span style="color:#fbbf24">€697</span> on May 2.',
+    urg_sub:'Lock in your access now at the current price before the offer expires.',
+    urg_cta:'LOCK IN CURRENT PRICE →',
+    days:'days',hours:'hours',mins:'minutes',secs:'seconds',
+    cta_h2:'Start producing today.<br/><span class="bg-clip-text text-transparent" style="background-image:linear-gradient(135deg,#a78bfa,#22c55e)">Without paying every month.</span>',
+    cta_sub:'Over €1,500 in AI tools for one single payment. Forever.',
+    cta_btn:'SEE PLANS & PRICING →',
+    cta_fine:'One-time payment · 7-day guarantee · Activation in less than 24h',
+    footer_desc:'Professional AI voice generation and cloning software. <strong class="text-white">100% local. Lifetime one-time payment.</strong>',
+    footer_response:'Reply in less than 24h · Support in ES/EN',
+    footer_rights:'All rights reserved',
+    footer_product:'Product',footer_features:'Features',footer_compare:'Calculator',
+    footer_support:'Support & Legal',footer_contact:'Contact',
+    footer_activate:'Activation / HWID',
+    footer_chat_link:'Support chat',
+    legal_notice:'Legal Notice',privacy:'Privacy',terms:'Terms',guarantee:'Guarantee',
+    footer_payments:'Payments securely processed by Hotmart (Stripe)',
+    cookie_text:'We only use strictly necessary technical cookies. No tracking or advertising. <a href="legal.html#cookies" class="accent underline">Learn more</a>.',
+    cookie_reject:'Necessary only',cookie_accept:'Accept & close',
+    chat_online:'Online · reply <24h',
+    exit_h3:'Wait! Don\'t leave without your discount',
+    exit_sub:'Special last-minute offer.<br/>This window expires in:',
+    exit_cta:'SEE MY DISCOUNT →',exit_dismiss:'No, I\'d rather pay full price',
+    exit_min_label:'min',exit_sec_label:'sec',
+    chat_greeting:'Hi! 👋 I\'m the CloneFlow assistant. How can I help you? For urgent cases, email info@cloneflowai.online.',
+    chat_placeholder:'Type your question...',
+    qr_pro:'What\'s in Pro?',qr_clone:'How does cloning work?',qr_pago:'How do I pay?',qr_garantia:'Guarantee?',qr_mac:'Mac?',
+    mob_price:'Pro · Lifetime',mob_cta:'BUY →',
+  }
+};
+
+// ════════════════════════════════════════════════════
+// SECTION DATA
+// ════════════════════════════════════════════════════
+const D={
+  feat1:{
+    es:['50 voces en 20+ idiomas y acentos','Español ES, MX, AR, CO, CL, US y más','Inglés US/UK/AU, Portugués, Francés, Alemán…','Hasta 50.000 caracteres por sesión (~1h)','Exporta WAV de calidad de estudio','Preview de voz antes de generar'],
+    en:['50 voices in 20+ languages and accents','Spanish ES, MX, AR, CO, CL, US and more','English US/UK/AU, Portuguese, French, German…','Up to 50,000 characters per session (~1h)','Export studio-quality WAV','Voice preview before generating']
+  },
+  feat2:{
+    es:['Sube muestra de audio mín. 30 segundos','Genera audio ilimitado con esa voz clonada','Funciona en cualquiera de los 20 idiomas','Clona tu voz o la de cualquier presentador','Tecnología ElevenLabs integrada','Voz clonada guardada para uso futuro'],
+    en:['Upload audio sample 30+ seconds','Generate unlimited audio with that voice','Works in any of the 20 available languages','Clone your voice or any presenter\'s','ElevenLabs technology integrated','Cloned voice saved for future use']
+  },
+  wf:{
+    es:[
+      {n:'01',title:'Guión de 1 hora',desc:'Pega hasta <strong class="text-white">50.000 caracteres</strong> directamente en CloneFlow. Suficiente para 55–65 minutos de audio narrado.'},
+      {n:'02',title:'Elige o clona tu voz',desc:'Selecciona una de las 50 voces del motor IA, o usa el clonador para generar con la voz exacta que quieres.'},
+      {n:'03',title:'Genera y exporta WAV',desc:'El motor IA genera el audio en segundos. Exporta el WAV de calidad estudio sin límites y sin marca de agua.'},
+      {n:'04',title:'Sube y monetiza',desc:'Combina el audio con tu vídeo en cualquier editor. Con consistencia, los canales alcanzan monetización en 3–6 meses.',green:true}
+    ],
+    en:[
+      {n:'01',title:'1-hour script',desc:'Paste up to <strong class="text-white">50,000 characters</strong> directly into CloneFlow. Enough for 55–65 minutes of narrated audio.'},
+      {n:'02',title:'Choose or clone your voice',desc:'Select one of the 50 AI engine voices, or use the cloner to generate with the exact voice you want.'},
+      {n:'03',title:'Generate and export WAV',desc:'The AI engine generates audio in seconds. Export studio-quality WAV without limits or watermark.'},
+      {n:'04',title:'Upload and monetize',desc:'Combine audio with your video in any editor. With consistency, channels reach monetization in 3–6 months.',green:true}
+    ]
+  },
+  priv:{
+    es:[
+      {i:'🔒',t:'Procesamiento 100% Local',d:'Tu GPU/CPU hace todo el trabajo. Ningún dato abandona tu máquina.'},
+      {i:'📵',t:'Sin Conexión Obligatoria',d:'Funciona offline tras la activación. Ideal para trabajar en avión o sin wifi.'},
+      {i:'🚫',t:'Sin Censura de Contenido',d:'No hay moderación de IA. Tus guiones, tus reglas. 100% libre.'},
+      {i:'∞',t:'Sin Límites de Caracteres',d:'Genera horas de audio sin contadores. Sin throttling. Sin planes de créditos.'}
+    ],
+    en:[
+      {i:'🔒',t:'100% Local Processing',d:'Your GPU/CPU does all the work. No data leaves your machine.'},
+      {i:'📵',t:'No Mandatory Connection',d:'Works offline after activation. Perfect for working on a plane or without wifi.'},
+      {i:'🚫',t:'No Content Censorship',d:'No AI moderation. Your scripts, your rules. 100% unrestricted.'},
+      {i:'∞',t:'No Character Limits',d:'Generate hours of audio with no counters. No throttling. No credit plans.'}
+    ]
+  },
+  who:{
+    es:[
+      {i:'📺',t:'Canales Faceless de YouTube',d:'Produce vídeos de 1 hora con guiones de 50.000 caracteres y voz clonada. Sin aparecer en cámara. El workflow completo para escalar a monetización en meses.',b:'Más popular',s:true},
+      {i:'🎙️',t:'Locutores y Podcasters',d:'Genera narración con tu voz clonada para episodios largos sin grabar cada línea.'},
+      {i:'📚',t:'Formadores y Cursos Online',d:'Actualiza el audio de tus cursos sin regrabar. Traduce guiones manteniendo tu voz.'},
+      {i:'🏢',t:'Agencias de Vídeo',d:'Ofrece doblaje y narración con voz clonada. Cobra 50–200€ por proyecto. Margen puro.'},
+      {i:'🤖',t:'Emprendedores de IA',d:'Audiolibros, avatares IA, doblajes en múltiples idiomas. Una inversión que factura por encargo.'}
+    ],
+    en:[
+      {i:'📺',t:'Faceless YouTube Channels',d:'Produce 1-hour videos with 50,000-character scripts and cloned voice. No camera needed. Complete workflow to scale to monetization in months.',b:'Most popular',s:true},
+      {i:'🎙️',t:'Voiceover Artists & Podcasters',d:'Generate narration with your cloned voice for long episodes without recording every line.'},
+      {i:'📚',t:'Trainers & Online Courses',d:'Update your course audio without re-recording. Translate scripts while keeping your voice.'},
+      {i:'🏢',t:'Video Agencies',d:'Offer dubbing and narration with cloned voice. Charge €50–200 per project. Pure margin.'},
+      {i:'🤖',t:'AI Entrepreneurs',d:'Audiobooks, AI avatars, multi-language dubbing. One investment that earns on demand.'}
+    ]
+  },
+  starter:{
+    es:['Motor de Voz IA ilimitado','50 voces en 20+ idiomas y acentos','Exportación WAV sin límite','Licencia vitalicia · 1 dispositivo','Actualizaciones incluidas','Soporte por email (info@cloneflowai.online)',{t:'Clonador de Voz IA',no:true},{t:'API ElevenLabs integrada',no:true}],
+    en:['Unlimited AI Voice Engine','50 voices in 20+ languages and accents','Unlimited WAV export','Lifetime license · 1 device','Updates included','Email support (info@cloneflowai.online)',{t:'AI Voice Cloner',no:true},{t:'Integrated ElevenLabs API',no:true}]
+  },
+  pro:{
+    es:['Todo lo del plan Starter','<strong class="text-white">Clonador de Voz IA incluido</strong>','API ElevenLabs integrada en la app','Genera ilimitado con cualquier voz clonada','50 voces en 20+ idiomas y acentos','<strong>Soporte prioritario</strong> (info@cloneflowai.online)','Actualizaciones futuras incluidas','Activación en menos de 24h'],
+    en:['Everything in Starter','<strong class="text-white">AI Voice Cloner included</strong>','ElevenLabs API integrated in app','Unlimited generations with any cloned voice','50 voices in 20+ languages and accents','<strong>Priority support</strong> (info@cloneflowai.online)','Future updates included','Activation in less than 24h']
+  },
+  test:{
+    es:[
+      {t:'"Tenía un canal faceless pagando 120€/mes entre ElevenLabs y Murf. Con CloneFlow hago exactamente lo mismo sin pagar nada mensual. La decisión más rentable del año."',n:'Carlos M.',r:'Canal faceless · Madrid, España',i:'CM'},
+      {t:'"El clonador de voz es increíble. Subí una muestra de mi voz, generé el audio de mi guión completo y no hay diferencia con mi grabación real. Mis suscriptores no notan nada."',n:'Alejandro R.',r:'Content creator · Bogotá, Colombia',i:'AR',g:true},
+      {t:'"Tengo una academia con 12 cursos. Actualizar el audio de cada lección me costaba horas. Ahora pego el texto corregido y genero la voz en segundos. Increíble."',n:'Laura V.',r:'Formadora online · Ciudad de México',i:'LV'},
+      {t:'"Soy locutor profesional y uso CloneFlow para entregas urgentes con mi voz clonada. Mis clientes no notan la diferencia. Para el precio que tiene, no hay nada comparable."',n:'Javier P.',r:'Locutor profesional · Barcelona, España',i:'JP'},
+      {t:'"Tengo tres canales en inglés, español y portugués. Escribo el guión una vez, lo traduzco y genero tres audios con voces nativas. Antes me costaba contratar tres locutores."',n:'Mateus F.',r:'Content creator · São Paulo, Brasil',i:'MF'},
+      {t:'"Lo compré con dudas y en 20 minutos ya tenía mi primer audio con voz clonada. La activación fue rapidísima y el soporte respondió en menos de 2 horas. Sin comparación."',n:'Sofía R.',r:'Emprendedora digital · Buenos Aires',i:'SR'}
+    ],
+    en:[
+      {t:'"I had a faceless channel paying $120/month for ElevenLabs and Murf. With CloneFlow I do exactly the same without paying monthly. Best decision of the year."',n:'Carlos M.',r:'Faceless channel · Madrid, Spain',i:'CM'},
+      {t:'"The voice cloner is incredible. I uploaded a sample of my voice, generated the full script audio and there\'s no difference from my real recording. My subscribers notice nothing."',n:'Alex R.',r:'Content creator · Bogotá, Colombia',i:'AR',g:true},
+      {t:'"I have an academy with 12 courses. Updating the audio of each lesson took me hours. Now I paste the corrected text and generate the voice in seconds. Incredible tool."',n:'Laura V.',r:'Online trainer · Mexico City',i:'LV'},
+      {t:'"I\'m a professional voiceover artist and I use CloneFlow for urgent deliveries with my cloned voice. My clients don\'t notice the difference. Nothing compares at this price."',n:'Javier P.',r:'Professional voiceover · Barcelona, Spain',i:'JP'},
+      {t:'"I have three channels in English, Spanish and Portuguese. I write the script once, translate it and generate three audios with native voices. Before I had to hire three voiceovers."',n:'Mateus F.',r:'Content creator · São Paulo, Brazil',i:'MF'},
+      {t:'"Bought it with doubts and 20 minutes later I had my first cloned voice audio. Activation was super fast and support replied in under 2 hours. Unmatched."',n:'Sofia R.',r:'Digital entrepreneur · Buenos Aires',i:'SR'}
+    ]
+  },
+  faqs:{
+    es:[
+      {q:'¿Puedo generar un vídeo de YouTube de 1 hora?',a:'Sí. El motor de voz acepta hasta 50.000 caracteres por sesión, equivalente a 55–65 minutos de audio narrado. Genera el audio completo de una sola vez, combínalo con tu vídeo en cualquier editor y súbelo a YouTube.'},
+      {q:'¿Cómo funciona el Clonador de Voz IA?',a:'Sube una muestra de audio de al menos 30 segundos con la voz que quieres clonar. La app la procesa vía ElevenLabs y crea una voz clonada para generar audio ilimitado en cualquier idioma. Necesitas una API key gratuita de ElevenLabs.'},
+      {q:'¿La licencia es realmente de por vida?',a:'Sí. Un solo pago y usas el software para siempre, incluyendo todas las actualizaciones futuras. Sin cuotas ocultas, sin renovaciones.'},
+      {q:'¿Para cuántos ordenadores sirve la licencia?',a:'La licencia está vinculada a 1 dispositivo mediante Hardware ID (HWID). Si cambias de ordenador, contáctanos en <strong>info@cloneflowai.online</strong> y gestionamos la transferencia sin coste adicional.'},
+      {q:'¿Cómo recibo mi clave de activación tras comprar?',a:'Recibes un email de <strong>info@cloneflowai.online</strong> con instrucciones detalladas. Ejecutas el software, copias tu HWID y nos lo envías a <strong>info@cloneflowai.online</strong>. En menos de 24 horas tienes tu clave de activación.'},
+      {q:'¿Qué hardware necesito?',a:'Windows 10 o 11 con mínimo 8 GB de RAM. La generación de voz funciona perfectamente en CPU; una GPU NVIDIA acelera los tiempos. Todos los componentes se incluyen en el instalador.'},
+      {q:'¿Hay garantía de devolución?',a:'7 días sin preguntas, gestionado directamente por nosotros y la plataforma de compra (Hotmart/Gumroad/LemonSqueezy). Si no cumple tus expectativas, escribe a <strong>info@cloneflowai.online</strong> y te devolvemos el importe íntegro.'},
+      {q:'¿Puedo ofrecer servicios a clientes con CloneFlow?',a:'Sí. La licencia cubre uso comercial personal. Puedes generar y clonar voces para proyectos de clientes y cobrar por ello sin restricciones.'},
+      {q:'¿Necesito API key de ElevenLabs para todo?',a:'No. El Motor de Voz IA con 50 voces funciona 100% offline sin ninguna API key. Solo el Clonador de Voz IA (plan Pro) necesita una API key gratuita de ElevenLabs (plan free de por vida).'},
+      {q:'¿Funciona en Mac?',a:'Actualmente solo Windows 10/11. Los usuarios de Mac usan VMs (Parallels, VMware) con Windows y funciona perfectamente. Estamos evaluando una versión nativa para Mac.'},
+      {q:'¿Cómo contacto con soporte?',a:'Escríbenos a <strong>info@cloneflowai.online</strong> o usa el chat en la esquina inferior derecha. Respondemos en menos de 24 horas (en español o inglés).'}
+    ],
+    en:[
+      {q:'Can I generate a 1-hour YouTube video?',a:'Yes. The voice engine accepts up to 50,000 characters per session, equivalent to 55–65 minutes of narrated audio. Generate the full audio at once, combine with your video in any editor and upload to YouTube.'},
+      {q:'How does the AI Voice Cloner work?',a:'Upload a 30+ second audio sample with the voice you want to clone. The app processes it via ElevenLabs and creates a cloned voice for unlimited audio generation in any language. You need a free ElevenLabs API key.'},
+      {q:'Is the license really lifetime?',a:'Yes. One payment and you use the software forever, including all future updates. No hidden fees, no renewals.'},
+      {q:'How many computers does the license cover?',a:'The license is tied to 1 device via Hardware ID (HWID). If you change computers, contact us at <strong>info@cloneflowai.online</strong> and we handle the transfer at no extra cost.'},
+      {q:'How do I receive my activation key after purchase?',a:'You receive an email from <strong>info@cloneflowai.online</strong> with detailed instructions. Run the software, copy your HWID and send it to <strong>info@cloneflowai.online</strong>. Within 24 hours you have your activation key.'},
+      {q:'What hardware do I need?',a:'Windows 10 or 11 with minimum 8 GB RAM. Voice generation works perfectly on CPU; an NVIDIA GPU accelerates times. All components are included in the installer.'},
+      {q:'Is there a refund guarantee?',a:'7 days no-questions-asked, handled directly by us and the purchase platform (Hotmart/Gumroad/LemonSqueezy). If it doesn\'t meet your expectations, email <strong>info@cloneflowai.online</strong> and we refund the full amount.'},
+      {q:'Can I offer services to clients with CloneFlow?',a:'Yes. The license covers personal commercial use. You can generate and clone voices for client projects and charge for it without restrictions.'},
+      {q:'Do I need an ElevenLabs API key for everything?',a:'No. The AI Voice Engine with 50 voices works 100% offline without any API key. Only the AI Voice Cloner (Pro plan) needs a free ElevenLabs API key (free lifetime plan).'},
+      {q:'Does it work on Mac?',a:'Currently Windows 10/11 only. Mac users use VMs (Parallels, VMware) with Windows and it works perfectly. We are evaluating a native Mac version.'},
+      {q:'How do I contact support?',a:'Email us at <strong>info@cloneflowai.online</strong> or use the chat in the bottom right. We reply within 24 hours (in English or Spanish).'}
+    ]
+  },
+  chat:{
+    es:{
+      pro:'El plan Pro incluye <strong>todo el Starter más el Clonador de Voz IA</strong>. Sube cualquier muestra de voz y genera audio ilimitado en cualquier idioma. Un solo pago de 497€ para siempre. Para detalles: info@cloneflowai.online',
+      clone:'El Clonador de Voz IA acepta muestras de mínimo 30 segundos. La procesa vía ElevenLabs y crea una voz clonada para generar audio ilimitado. Necesitas una API key <strong>gratuita</strong> de ElevenLabs.',
+      pago:'Pagas con <strong>tarjeta de crédito/débito vía Stripe</strong> a través de Hotmart (pago seguro). Tras el pago recibes un email automático desde <strong>info@cloneflowai.online</strong> con tu clave de activación.',
+      garantia:'<strong>7 días de garantía completa</strong>, sin preguntas. Escribe a <strong>info@cloneflowai.online</strong> y recuperas tu dinero íntegro.',
+      mac:'CloneFlow es <strong>Windows 10/11 únicamente</strong>. No hay versión nativa para Mac actualmente. Una VM con Windows (Parallels, VMware) funciona perfectamente.',
+      voces:'El motor incluye <strong>50 voces en 20+ idiomas</strong>: Español (7 acentos), Inglés US/UK/AU, Portugués, Francés, Alemán, Italiano, Ruso, Árabe, Chino, Japonés, Coreano, Hindi, Polaco, Turco, Catalán y Gallego.',
+      activacion:'Tras la compra recibes un email desde <strong>info@cloneflowai.online</strong>. Ejecuta el software, copia tu HWID y envíalo a <strong>info@cloneflowai.online</strong>. Recibes la clave en menos de 24h.',
+      default:'Gracias por tu pregunta. Para respuestas personalizadas escríbenos a <strong>info@cloneflowai.online</strong>. Respondemos en menos de 24 horas.'
+    },
+    en:{
+      pro:'The Pro plan includes <strong>everything in Starter plus the AI Voice Cloner</strong>. Upload any voice sample and generate unlimited audio in any language. One payment of €497 forever. Details: info@cloneflowai.online',
+      clone:'The AI Voice Cloner accepts samples of at least 30 seconds. It processes them via ElevenLabs and creates a cloned voice for unlimited audio generation. You need a <strong>free</strong> ElevenLabs API key.',
+      pago:'Pay with <strong>credit/debit card via Stripe</strong> through Hotmart (secure payment). After payment you receive an automatic email from <strong>info@cloneflowai.online</strong> with your activation key.',
+      garantia:'<strong>7-day full guarantee</strong>, no questions asked. Email <strong>info@cloneflowai.online</strong> and get your full money back.',
+      mac:'CloneFlow is <strong>Windows 10/11 only</strong>. No native Mac version currently. A Windows VM (Parallels, VMware) works perfectly.',
+      voces:'The engine includes <strong>50 voices in 20+ languages</strong>: Spanish (7 accents), English US/UK/AU, Portuguese, French, German, Italian, Russian, Arabic, Chinese, Japanese, Korean, Hindi, Polish, Turkish, Catalan and Galician.',
+      activacion:'After purchase you receive an email from <strong>info@cloneflowai.online</strong>. Run the software, copy your HWID and send it to <strong>info@cloneflowai.online</strong>. You get the key within 24h.',
+      default:'Thanks for your question. For personalized answers email <strong>info@cloneflowai.online</strong>. We reply within 24 hours.'
+    }
+  },
+  tickers:{
+    es:[
+      '🟢 Carlos M. de Madrid compró CloneFlow Pro hace 3 min',
+      '🟢 Ana L. de Buenos Aires compró CloneFlow Starter hace 7 min',
+      '🟢 Diego R. de Bogotá compró CloneFlow Pro hace 14 min',
+      '🟢 Sofía V. de Ciudad de México compró CloneFlow Pro hace 21 min',
+      '🟢 Mateus F. de São Paulo compró CloneFlow Starter hace 28 min',
+      '🟢 Laura G. de Barcelona compró CloneFlow Pro hace 35 min',
+      '🟢 Jorge H. de Santiago compró CloneFlow Pro hace 47 min',
+      '🟢 María T. de Lima compró CloneFlow Starter hace 54 min'
+    ],
+    en:[
+      '🟢 Carlos M. from Madrid bought CloneFlow Pro 3 min ago',
+      '🟢 Ana L. from Buenos Aires bought CloneFlow Starter 7 min ago',
+      '🟢 Diego R. from Bogotá bought CloneFlow Pro 14 min ago',
+      '🟢 Sofia V. from Mexico City bought CloneFlow Pro 21 min ago',
+      '🟢 Mateus F. from São Paulo bought CloneFlow Starter 28 min ago',
+      '🟢 Laura G. from Barcelona bought CloneFlow Pro 35 min ago',
+      '🟢 Jorge H. from Santiago bought CloneFlow Pro 47 min ago',
+      '🟢 Maria T. from Lima bought CloneFlow Starter 54 min ago'
+    ]
+  }
+};
+
+// ════════════════════════════════════════════════════
+// STATE
+// ════════════════════════════════════════════════════
+let lang=localStorage.getItem('cf_lang')||'es';
+
+// ════════════════════════════════════════════════════
+// WAVEFORM
+// ════════════════════════════════════════════════════
+function buildWaveform(){
+  const wf=document.getElementById('waveform');if(!wf)return;
+  const heights=[20,38,55,70,52,82,40,65,35,72,55,38,68,45,60,30,75,52,40,65,30,55,72,40];
+  wf.innerHTML=heights.map((h,i)=>`<span class="wave-bar" style="height:${h}%;animation-delay:${i*0.06}s"></span>`).join('');
+}
+
+// ════════════════════════════════════════════════════
+// RENDER
+// ════════════════════════════════════════════════════
+function renderAll(l){
+  const g=(id)=>document.getElementById(id);
+  const f1=g('feat1_list');if(f1)f1.innerHTML=D.feat1[l].map(i=>`<li class="flex gap-2.5"><span class="text-[#4ade80] mt-0.5 flex-shrink-0">✓</span><span>${i}</span></li>`).join('');
+  const f2=g('feat2_list');if(f2)f2.innerHTML=D.feat2[l].map(i=>`<li class="flex gap-2.5"><span class="text-[#4ade80] mt-0.5 flex-shrink-0">✓</span><span>${i}</span></li>`).join('');
+  const wf=g('wf_steps');if(wf)wf.innerHTML=D.wf[l].map(s=>`<div class="${s.green?'card-green':'card'} p-6"><div class="font-black text-3xl mb-3 ${s.green?'text-[#4ade80]':'accent'}">${s.n}</div><h3 class="font-bold text-base mb-2 text-white">${s.title}</h3><p class="text-2 text-sm leading-relaxed">${s.desc}</p></div>`).join('');
+  const pc=g('priv_cards');if(pc)pc.innerHTML=D.priv[l].map(c=>`<div class="card p-6 text-left"><div class="text-3xl mb-4">${c.i}</div><h3 class="font-bold text-base mb-2 text-white">${c.t}</h3><p class="text-2 text-sm leading-relaxed">${c.d}</p></div>`).join('');
+  const wc=g('who_cards');if(wc)wc.innerHTML=D.who[l].map(c=>`<div class="flex gap-4 ${c.g?'card-glow':'card'} p-6 ${c.s?'md:col-span-2':''}"><span class="text-3xl flex-shrink-0">${c.i}</span><div><div class="flex items-center gap-2 mb-1.5 flex-wrap"><h3 class="font-bold text-white">${c.t}</h3>${c.b?`<span class="badge badge-violet">${c.b}</span>`:''}</div><p class="text-2 text-sm leading-relaxed">${c.d}</p></div></div>`).join('');
+  const sf=g('starter_features');if(sf)sf.innerHTML=D.starter[l].map(i=>typeof i==='string'?`<li class="flex gap-2.5 items-start"><span class="text-[#4ade80] mt-0.5 flex-shrink-0">✓</span><span>${i}</span></li>`:`<li class="flex gap-2.5 items-start text-muted line-through"><span class="mt-0.5 flex-shrink-0">✗</span><span>${i.t}</span></li>`).join('');
+  const pf=g('pro_features');if(pf)pf.innerHTML=D.pro[l].map(i=>`<li class="flex gap-2.5 items-start"><span class="text-[#4ade80] mt-0.5 flex-shrink-0">✓</span><span>${i}</span></li>`).join('');
+  const tm=g('testimonials');if(tm)tm.innerHTML=D.test[l].map(t=>`<div class="${t.g?'card-glow':'card'} p-6 flex flex-col gap-4"><div class="flex gap-0.5 text-[#fbbf24] text-sm">★★★★★</div><p class="text-2 text-sm leading-relaxed">${t.t}</p><div class="flex items-center gap-3 mt-auto pt-2"><div class="w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold" style="background:rgba(139,92,246,.18);color:#a78bfa">${t.i}</div><div><p class="text-sm font-semibold text-white">${t.n}</p><p class="text-xs text-3">${t.r}</p></div></div></div>`).join('');
+  const fq=g('faqList');if(fq){fq.innerHTML='';D.faqs[l].forEach(f=>{const d=document.createElement('div');d.className='card overflow-hidden';d.innerHTML=`<button onclick="toggleFaq(this)" class="w-full text-left px-6 py-5 font-semibold flex justify-between items-center gap-4 hover:text-white transition text-2"><span>${f.q}</span><span class="accent text-2xl flex-shrink-0 leading-none">+</span></button><div class="faq-body px-6 pb-5 text-2 text-sm leading-relaxed">${f.a}</div>`;fq.appendChild(d);});}
+  const qrMap={pro:'qr_pro',clone:'qr_clone',pago:'qr_pago',garantia:'qr_garantia',mac:'qr_mac'};
+  document.querySelectorAll('[data-qr]').forEach(btn=>{const k=qrMap[btn.getAttribute('data-qr')];if(k&&T[l][k])btn.textContent=T[l][k];});
+  tickerIdx=0;rotateTicker();
+}
+
+// ════════════════════════════════════════════════════
+// LANG SWITCH
+// ════════════════════════════════════════════════════
+function switchLang(l){
+  lang=l;localStorage.setItem('cf_lang',l);
+  document.getElementById('htmlRoot').lang=l;
+  document.title=T[l].page_title;
+  document.getElementById('btnES').classList.toggle('active',l==='es');
+  document.getElementById('btnEN').classList.toggle('active',l==='en');
+  document.querySelectorAll('[data-i18n]').forEach(el=>{const k=el.getAttribute('data-i18n');if(T[l][k]!==undefined)el.textContent=T[l][k];});
+  document.querySelectorAll('[data-i18n-html]').forEach(el=>{const k=el.getAttribute('data-i18n-html');if(T[l][k]!==undefined)el.innerHTML=T[l][k];});
+  const ci=document.getElementById('chatInput');if(ci)ci.placeholder=T[l].chat_placeholder;
+  const cg=document.getElementById('chatGreeting');if(cg)cg.textContent=T[l].chat_greeting;
+  renderAll(l);
+}
+
+// ════════════════════════════════════════════════════
+// FLASH BANNER & URGENCY
+// ════════════════════════════════════════════════════
+const DEADLINE=new Date('2026-05-02T23:59:00');
+let bannerDismissed=false;
+function pad2(n){return String(n).padStart(2,'0')}
+function updateFlash(){
+  if(bannerDismissed)return;
+  const diff=DEADLINE-new Date(),el=document.getElementById('flashCountdown');if(!el)return;
+  if(diff<=0){el.textContent=lang==='en'?'OFFER ENDED':'OFERTA FINALIZADA';return;}
+  const d=Math.floor(diff/86400000),h=Math.floor((diff%86400000)/3600000),m=Math.floor((diff%3600000)/60000),s=Math.floor((diff%60000)/1000);
+  el.textContent=(d>0?d+'d ':'')+pad2(h)+':'+pad2(m)+':'+pad2(s);
+}
+setInterval(updateFlash,1000);updateFlash();
+function dismissBanner(){bannerDismissed=true;document.getElementById('flashBanner').style.display='none';document.getElementById('mainNav').style.top='0';}
+
+function updateUrg(){
+  const diff=DEADLINE-new Date();
+  if(diff<=0){['urgDays','urgHours','urgMins','urgSecs'].forEach(id=>{const e=document.getElementById(id);if(e)e.textContent='00';});return;}
+  const d=Math.floor(diff/86400000),h=Math.floor((diff%86400000)/3600000),m=Math.floor((diff%3600000)/60000),s=Math.floor((diff%60000)/1000);
+  document.getElementById('urgDays').textContent=d;
+  document.getElementById('urgHours').textContent=pad2(h);
+  document.getElementById('urgMins').textContent=pad2(m);
+  document.getElementById('urgSecs').textContent=pad2(s);
+}
+setInterval(updateUrg,1000);updateUrg();
+
+// ════════════════════════════════════════════════════
+// VIEWERS + TICKER
+// ════════════════════════════════════════════════════
+function updateViewers(){const el=document.getElementById('viewerCount');if(el)el.textContent=Math.floor(Math.random()*(95-41+1))+41;setTimeout(updateViewers,Math.random()*13000+7000);}
+setTimeout(updateViewers,Math.random()*6000+5000);
+
+let tickerIdx=0;
+function rotateTicker(){
+  const el=document.getElementById('purchaseTicker');if(!el)return;
+  const items=D.tickers[lang]||D.tickers.es;
+  el.style.animation='none';el.textContent=items[tickerIdx%items.length];void el.offsetWidth;
+  el.style.animation='ticker-fade 4s ease-in-out infinite';tickerIdx++;
+}
+setInterval(rotateTicker,4000);
+
+// ════════════════════════════════════════════════════
+// CALCULATOR
+// ════════════════════════════════════════════════════
+const EUR=0.92,PRICE_PRO=497;
+const tools={elevenlabs:{p:99,on:true},resemble:{p:49,on:true},murf:{p:66,on:false},descript:{p:24,on:false}};
+function toggleTool(btn,id){
+  tools[id].on=!tools[id].on;
+  btn.classList.toggle('active',tools[id].on);
+  updateCalc();
+}
+function fmt(n){return Math.round(n).toLocaleString('es-ES')}
+function updateCalc(){
+  const mo=Object.values(tools).filter(t=>t.on).reduce((s,t)=>s+t.p,0)*EUR;
+  const yr=mo*12,sav=yr-PRICE_PRO,pct=mo>0?Math.min(100,Math.max(0,sav/yr*100)):0,mth=mo>0?PRICE_PRO/mo:1;
+  document.getElementById('monthlyCloud').textContent=fmt(mo)+' €';
+  document.getElementById('yearlyCloud').textContent=fmt(yr)+' €';
+  document.getElementById('savings').textContent='+'+fmt(Math.max(0,sav))+' €';
+  document.getElementById('savingsBar').style.width=pct.toFixed(1)+'%';
+  const m=mth<1?(lang==='en'?'less than 1 month':'menos de 1 mes'):Math.ceil(mth)+(lang==='en'?' month'+(Math.ceil(mth)>1?'s':''):' mes'+(Math.ceil(mth)>1?'es':''));
+  document.getElementById('savingsMsg').innerHTML=lang==='en'?`With CloneFlow Pro (€497) you recover the investment in <strong class="text-white">${m}</strong>.`:`Con CloneFlow Pro (497€) recuperas la inversión en <strong class="text-white">${m}</strong>.`;
+}
+
+// ════════════════════════════════════════════════════
+// FAQ
+// ════════════════════════════════════════════════════
+function toggleFaq(btn){const body=btn.nextElementSibling,icon=btn.querySelector('span:last-child'),open=body.classList.toggle('open');icon.textContent=open?'−':'+';}
+
+// ════════════════════════════════════════════════════
+// LEAD MAGNET
+// ════════════════════════════════════════════════════
+function submitLead(){
+  const inp=document.getElementById('leadEmail'),email=inp.value.trim();
+  if(!email||!email.includes('@')){inp.style.borderColor='#ef4444';return;}
+  const btn=document.getElementById('leadBtn');
+  if(btn){btn.disabled=true;btn.textContent='Enviando...';}
+  emailjs.send('service_2p0dwpq','template_yg6ko8x',{to_email:email,email:email})
+    .then(()=>{
+      document.getElementById('leadForm').classList.add('hidden');
+      document.getElementById('leadThankYou').classList.remove('hidden');
+    })
+    .catch(()=>{
+      if(btn){btn.disabled=false;btn.textContent='Recibir PDF gratis';}
+      alert('Hubo un error al enviar. Inténtalo de nuevo.');
+    });
+}
+
+// ════════════════════════════════════════════════════
+// COOKIES
+// ════════════════════════════════════════════════════
+const CKEY='cf_cookie_consent',cb=document.getElementById('cookieBanner');
+function acceptCookies(){localStorage.setItem(CKEY,'accepted');cb.style.display='none';}
+function rejectCookies(){localStorage.setItem(CKEY,'rejected');cb.style.display='none';}
+if(!localStorage.getItem(CKEY))setTimeout(()=>{cb.style.display='flex';},1800);
+
+// ════════════════════════════════════════════════════
+// CHATBOT
+// ════════════════════════════════════════════════════
+function detectIntent(t){
+  t=t.toLowerCase();
+  if(/pro|plan|incluy|include/.test(t))return'pro';
+  if(/clon|clone/.test(t))return'clone';
+  if(/pago|pay|tarjeta|card|hotmart|stripe/.test(t))return'pago';
+  if(/garantia|garantía|devoluci|refund|money.back/.test(t))return'garantia';
+  if(/mac|macos|apple/.test(t))return'mac';
+  if(/voc|voice|idioma|language/.test(t))return'voces';
+  if(/activ|hwid|key|clave|licenc/.test(t))return'activacion';
+  return'default';
+}
+function addMsg(text,isUser){
+  const msgs=document.getElementById('chatMessages'),div=document.createElement('div');
+  div.className=isUser?'chat-user p-3 text-xs leading-relaxed max-w-[85%] self-end ml-auto':'chat-bot p-3 text-xs leading-relaxed max-w-[90%]';
+  div.innerHTML=text;msgs.appendChild(div);msgs.scrollTop=msgs.scrollHeight;
+}
+function quickReply(key){
+  const qrl={pro:T[lang].qr_pro,clone:T[lang].qr_clone,pago:T[lang].qr_pago,garantia:T[lang].qr_garantia,mac:T[lang].qr_mac};
+  addMsg(qrl[key]||key,true);
+  setTimeout(()=>addMsg((D.chat[lang]||D.chat.es)[key]||(D.chat[lang]||D.chat.es).default,false),420);
+}
+function sendChat(){
+  const inp=document.getElementById('chatInput'),text=inp.value.trim();if(!text)return;inp.value='';
+  addMsg(text,true);
+  const ans=D.chat[lang]||D.chat.es;
+  setTimeout(()=>addMsg(ans[detectIntent(text)]||ans.default,false),500);
+}
+function toggleChat(){const p=document.getElementById('chatPanel');p.classList.toggle('open');document.getElementById('chatBtn').textContent=p.classList.contains('open')?'✕':'💬';}
+function openChat(){document.getElementById('chatPanel').classList.add('open');document.getElementById('chatBtn').textContent='✕';}
+function closeChat(){document.getElementById('chatPanel').classList.remove('open');document.getElementById('chatBtn').textContent='💬';}
+
+// ════════════════════════════════════════════════════
+// EXIT INTENT
+// ════════════════════════════════════════════════════
+let exitShown=false,exitTimer=null,exitSecs=600;
+function showExit(){if(exitShown||sessionStorage.getItem('cf_exit'))return;exitShown=true;sessionStorage.setItem('cf_exit','1');document.getElementById('exitPopup').classList.add('show');exitTimer=setInterval(()=>{exitSecs--;if(exitSecs<=0){clearInterval(exitTimer);closeExit();return;}document.getElementById('exitMins').textContent=pad2(Math.floor(exitSecs/60));document.getElementById('exitSecs').textContent=pad2(exitSecs%60);},1000);}
+function closeExit(){document.getElementById('exitPopup').classList.remove('show');if(exitTimer)clearInterval(exitTimer);}
+document.addEventListener('mouseleave',e=>{if(e.clientY<=0)showExit();});
+
+// ════════════════════════════════════════════════════
+// INIT
+// ════════════════════════════════════════════════════
+document.addEventListener('DOMContentLoaded',()=>{
+  buildWaveform();
+  switchLang(lang);
+  updateCalc();
+  // initial active state for tool buttons
+  document.querySelectorAll('.tool-btn').forEach((b,i)=>{
+    if(b.getAttribute('data-active')==='true')b.classList.add('active');
+  });
+  rotateTicker();
+});
+</script>
+</body>
+</html>
